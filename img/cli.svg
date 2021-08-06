@@ -1,0 +1,12 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="ic_cli" viewBox="0 0 24 24" width="24"  height="24" >
+  <g transform="translate(-16 -12)" id="Symbols" fill="#9193A8">
+    <g id="icon-cli-copy" transform="translate(16 12)" fill="#9193A8">
+      <path id="Shape" d="M22.179 20.898H1.821A.821.821 0 0 1 1 20.073V3.927a.82.82 0 0 1 .821-.825h20.357a.821.821 0 0 1 .822.825v16.146a.822.822 0 0 1-.821.825zM1.821 3.663a.26.26 0 0 0-.26.264v16.146a.26.26 0 0 0 .261.264h20.357a.26.26 0 0 0 .261-.264V3.927a.26.26 0 0 0-.261-.264H1.821z" fill="#9193A8"></path>
+      <circle id="Oval" cx="3.161" cy="5.279" r=".453" fill="#9193A8"></circle>
+      <circle cx="4.67" cy="5.279" r=".453" fill="#9193A8"></circle>
+      <circle cx="6.179" cy="5.279" r=".453" fill="#9193A8"></circle>
+      <path id="Path" d="M8.369 14.836a.42.42 0 0 1-.3-.127.423.423 0 0 1 0-.606l1.975-1.982-1.975-1.982a.43.43 0 0 1 .607-.606l2.281 2.281a.43.43 0 0 1 0 .606l-2.281 2.281a.431.431 0 0 1-.307.135z" fill="#9193A8"></path>
+      <path d="M15.644 13.923h-3.227a.43.43 0 0 0 0 .858h3.227a.43.43 0 0 0 0-.858z" fill="#9193A8"></path>
+    </g>
+  </g>
+</svg>
