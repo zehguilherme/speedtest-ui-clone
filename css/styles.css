@@ -70,7 +70,8 @@ body {
 }
 
 .nav-list-item-link {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list-item-link:hover {
@@ -105,7 +106,13 @@ body {
   padding-bottom: 0.5rem;
 }
 
+.sub-menu-enterprise {
+  width: 15.755rem;
+}
+
 .sub-menu-list-item {
+  display: flex;
+  align-items: center;
   height: 2.563rem;
 }
 
@@ -121,20 +128,20 @@ body {
   width: 36px;
 }
 
-.sub-menu-list-item-link:hover .sub-menu-icon {
-  fill: var(--text-color);
-}
-
-.sub-menu-list-item-link:hover .device-name {
-  color: var(--text-color);
-}
-
 .sub-menu-list-item-link .sub-menu-icon {
   fill: var(--light-blue);
 }
 
-.sub-menu-list-item-link .device-name {
+.sub-menu-list-item-link:hover .sub-menu-icon {
+  fill: var(--text-color);
+}
+
+.sub-menu-list-item-link .sub-menu-text {
   color: var(--light-blue);
+}
+
+.sub-menu-list-item-link:hover .sub-menu-text {
+  color: var(--text-color);
 }
 
 /* Text */
