@@ -6,44 +6,327 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://b.cdnst.net/fonts/HCo_fonts.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Speedtest by Ookla - The Global Broadband Speed Test</title>
 </head>
 
 <body>
     <header>
-        <div class="wrapper">
+        <div class="wrapper header-container">
             <h1>
-                <a href="./index.html">
-                    <img src="./img/logo.svg" alt="Speedtest logo" id="logo">
+                <a class="logo-link" href="./index.html">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="logo"
+                        title="Speedtest logo" viewBox="0 0 193 24" width="193" height="24">
+                        <path
+                            d="M35.7 19.3l1.9-2.3c1.7 1.5 3.5 2.4 5.8 2.4 2 0 3.2-.9 3.2-2.3V17c0-1.3-.7-2-4.1-2.8-3.9-.9-6.1-2.1-6.1-5.5 0-3.1 2.6-5.3 6.3-5.3 2.7 0 4.8.8 6.7 2.3l-1.7 2.4c-1.6-1.2-3.3-1.9-5-1.9-1.9 0-3 1-3 2.2v.1c0 1.4.8 2.1 4.4 2.9 3.9.9 5.9 2.3 5.9 5.4v.1c0 3.4-2.7 5.5-6.6 5.5-2.9-.2-5.5-1.1-7.7-3.1m23.9-6.1c2.4 0 3.9-1.4 3.9-3.3 0-2.2-1.5-3.3-3.9-3.3h-3.7v6.6h3.7zm-7-9.5h7.2c4.3 0 7 2.4 7 6.1v.1c0 4.1-3.3 6.3-7.3 6.3h-3.6V22h-3.2l-.1-18.3zm17 0h13.6v2.8H72.8v4.8H82v2.9h-9.2v4.9h10.5V22H69.6zm17 0h13.6v2.8H89.8v4.8H99v2.9h-9.2v4.9h10.5V22H86.6zm20.2 2.9v12.5h3.6c3.8 0 6.4-2.6 6.4-6.2v-.1c0-3.6-2.5-6.2-6.4-6.2h-3.6zm-3.2-2.9h6.8c5.8 0 9.7 3.9 9.7 9.1v.1c0 5.2-4 9.2-9.7 9.2h-6.8V3.7zm24.2 2.9H122V3.7h14.9v2.9h-5.8V22h-3.3zm12.5-2.9h13.6v2.8h-10.4v4.8h9.2v2.9h-9.2v4.9H154V22h-13.7zm16.3 15.6l1.9-2.3c1.7 1.5 3.5 2.4 5.8 2.4 2 0 3.2-.9 3.2-2.3V17c0-1.3-.7-2-4.1-2.8-3.9-.9-6.1-2.1-6.1-5.5 0-3.1 2.6-5.3 6.3-5.3 2.7 0 4.8.8 6.7 2.3l-1.7 2.4c-1.6-1.2-3.3-1.9-5-1.9-1.9 0-3 1-3 2.2v.1c0 1.4.8 2.1 4.4 2.9 3.9.9 5.9 2.3 5.9 5.4v.1c0 3.4-2.7 5.5-6.6 5.5-2.9-.2-5.5-1.1-7.7-3.1m22.1-12.7h-5.8V3.7h14.9v2.9H182V22h-3.3zM23 23c2.3-2.3 3.8-5.5 3.8-9.1C26.8 6.8 21 1 13.9 1 6.8 1 1 6.8 1 13.9c0 3.6 1.4 6.8 3.8 9.1l1.8-1.8c-1.9-1.9-3-4.4-3-7.3 0-5.7 4.6-10.3 10.3-10.3 5.7 0 10.3 4.6 10.3 10.3 0 2.8-1.2 5.4-3 7.3L23 23z">
+                        </path>
+                        <path
+                            d="M13.5 16.5l-2.2-2.3 7.3-6.4 1.3 1.4zM190.8 5.1c.2 0 .4-.1.4-.3 0-.2-.1-.3-.4-.3h-.5v.6h.5zm-.8-.9h.8c.2 0 .4.1.5.2.1.1.2.2.2.4 0 .3-.2.5-.4.5l.5.7h-.4l-.4-.6h-.4V6h-.4V4.2z">
+                        </path>
+                        <path
+                            d="M190.7 3.6c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5 1.5-.7 1.5-1.5-.7-1.5-1.5-1.5m0 .2c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3-.7 0-1.3-.6-1.3-1.3 0-.7.5-1.3 1.3-1.3">
+                        </path>
+                    </svg>
                 </a>
             </h1>
 
             <nav class="nav-menu">
-                <ul>
-                    <li class="nav-menu-item">
-                        <a href="#">Apps</a>
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a class="nav-list-item-link text-white" href="#">Apps</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu-list-item">
+                                <a class="sub-menu-list-item-link" href="#">
+                                    <svg title="IOS" class="sub-menu-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M7.339 19.816h-5.5c-.463 0-.811-.376-.839-.839V7.137a.84.84 0 0 1 .839-.839h5.5a.84.84 0 0 1 .839.839v11.839a.839.839 0 0 1-.839.84zm-5.5-12.998a.32.32 0 0 0-.318.318v11.839a.32.32 0 0 0 .318.318h5.529a.32.32 0 0 0 .318-.318V7.137a.32.32 0 0 0-.318-.318l-5.529-.001z">
+                                        </path>
+                                        <circle cx="4.589" cy="17.703" r=".579"></circle>
+                                        <circle cx="20.887" cy="12.058" r=".579"></circle>
+                                        <path
+                                            d="M22.189 19.816H9.076c-.145 0-.261-.116-.261-.261s.116-.261.261-.261H22.16a.32.32 0 0 0 .318-.318V5.024a.32.32 0 0 0-.318-.318H3.924a.32.32 0 0 0-.318.318V5.4c.029.145-.087.261-.232.289-.145.029-.261-.086-.29-.231v-.434a.84.84 0 0 1 .839-.839h18.266c.464-.001.811.376.811.839v13.982c0 .433-.376.81-.811.81z">
+                                        </path>
+                                        <path
+                                            d="M10.118 13.65h-.289v-2.374h.289v2.374zm-.144-2.866c-.116 0-.203-.058-.232-.174-.029-.116.058-.203.174-.232h.058c.116 0 .203.058.232.174.029.116-.058.203-.174.232h-.058zm2.113 2.924c-.926 0-1.505-.666-1.505-1.708s.579-1.708 1.505-1.708 1.505.666 1.505 1.708-.579 1.708-1.505 1.708zm3.039 0c-.695 0-1.187-.376-1.216-.955h.318c.029.405.405.666.926.666s.839-.261.839-.637c0-.318-.203-.492-.695-.608l-.405-.116c-.608-.145-.897-.405-.897-.839 0-.521.492-.926 1.129-.926s1.129.376 1.129.897h-.318c-.029-.376-.347-.637-.839-.637s-.782.289-.782.637c0 .289.203.463.695.579l.347.087c.666.174.955.434.955.868.001.608-.462.984-1.186.984zm-3.039-3.126c-.724 0-1.187.55-1.187 1.418s.463 1.418 1.187 1.418 1.187-.55 1.187-1.418-.463-1.418-1.187-1.418z">
+                                        </path>
+                                    </svg>
+                                    <span class="device-name">iOS</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a class="sub-menu-list-item-link" href="#">
+                                    <svg title="Android" class="sub-menu-icon"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <g transform="translate(-13 -12)">
+                                            <g transform="translate(13 12)">
+                                                <path
+                                                    d="M7.334 19.816H1.817A.828.828 0 0 1 1 18.999V7.147c0-.476.374-.817.817-.817h5.517c.477 0 .817.374.817.817v11.851c.035.443-.34.818-.817.818zM1.817 6.807a.342.342 0 0 0-.341.341v11.851c0 .102.034.17.102.238a.309.309 0 0 0 .238.102h5.517c.17 0 .306-.136.306-.341V7.147a.342.342 0 0 0-.341-.341H1.817z">
+                                                </path>
+                                                <circle cx="4.576" cy="17.705" r=".579"></circle>
+                                                <circle cx="20.889" cy="12.051" r=".579"></circle>
+                                                <path
+                                                    d="M22.183 19.816H9.071a.232.232 0 0 1-.238-.238c0-.136.102-.238.238-.238h13.112c.102 0 .17-.034.238-.102a.309.309 0 0 0 .102-.238V5.036a.309.309 0 0 0-.102-.238.309.309 0 0 0-.238-.102H3.929a.342.342 0 0 0-.341.341v.373c0 .102-.034.204-.136.238-.102.034-.204.068-.273 0s-.102-.136-.102-.238v-.409c0-.443.374-.817.852-.817h18.254c.443 0 .817.375.817.817v13.963c0 .477-.374.852-.817.852z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                        <g transform="translate(-66.971 -261.917)">
+                                            <g transform="translate(480.526 -75.04) scale(1.32125)">
+                                                <path
+                                                    d="M-304.522 265.499c-.16 0-.325.128-.325.354 0 .206.145.351.325.351.149 0 .215-.1.215-.1v.043c0 .021.019.044.043.044h.108v-.676h-.151v.086a.259.259 0 0 0-.215-.102zm.027.138c.132 0 .201.116.201.215 0 .11-.083.215-.201.215-.099 0-.199-.08-.199-.217 0-.122.086-.213.199-.213z">
+                                                </path>
+                                                <path
+                                                    d="M-303.946 266.191a.042.042 0 0 1-.043-.044v-.633h.151v.084c.034-.052.101-.099.204-.099.168 0 .257.134.257.259v.433h-.105a.046.046 0 0 1-.046-.046v-.354c0-.07-.043-.154-.141-.154-.106 0-.169.1-.169.194v.359l-.108.001z">
+                                                </path>
+                                                <path
+                                                    d="M-302.936 265.499c-.16 0-.325.128-.325.354 0 .206.145.351.325.351.149 0 .215-.1.215-.1v.043c0 .021.019.044.044.044h.108v-1.015h-.151v.424c-.001 0-.068-.101-.216-.101zm.027.138c.132 0 .201.116.201.215 0 .11-.082.215-.201.215-.099 0-.199-.08-.199-.217 0-.122.085-.213.199-.213z">
+                                                </path>
+                                                <path
+                                                    d="M-302.36 266.191a.042.042 0 0 1-.043-.044v-.633h.151v.113a.186.186 0 0 1 .182-.12c.028 0 .054.005.054.005v.156s-.032-.013-.072-.013c-.106 0-.164.1-.164.194v.341l-.108.001z">
+                                                </path>
+                                                <path
+                                                    d="M-301.1 266.191a.042.042 0 0 1-.043-.044v-.633h.151v.676l-.108.001z">
+                                                </path>
+                                                <path
+                                                    d="M-300.549 265.499c-.16 0-.325.128-.325.354 0 .206.145.351.325.351.149 0 .215-.1.215-.1v.043c0 .021.019.044.043.044h.108v-1.015h-.151v.424a.258.258 0 0 0-.215-.101zm.027.138c.132 0 .201.116.201.215 0 .11-.083.215-.201.215-.099 0-.199-.08-.199-.217.001-.122.086-.213.199-.213z">
+                                                </path>
+                                                <circle cx="-301.069" cy="265.269" r=".1"></circle>
+                                                <path
+                                                    d="M-301.618 265.499a.347.347 0 0 0-.352.352c0 .207.157.352.352.352a.352.352 0 0 0 0-.704zm.001.141c.116 0 .203.094.203.212 0 .12-.092.213-.203.213a.205.205 0 0 1-.202-.211c0-.13.094-.214.202-.214z">
+                                                </path>
+                                            </g>
+                                            <path
+                                                d="M82.331 272.342l.511-.885a.103.103 0 1 0-.178-.104l-.518.897a3.162 3.162 0 0 0-1.318-.281c-.478 0-.922.1-1.318.281l-.518-.897a.102.102 0 0 0-.141-.037.102.102 0 0 0-.037.141l.511.885a3.05 3.05 0 0 0-1.576 2.413h6.16a3.05 3.05 0 0 0-1.578-2.413zm-2.917 1.548a.258.258 0 1 1 0-.516.258.258 0 0 1 0 .516zm2.828 0a.258.258 0 1 1 0-.516.258.258 0 0 1 0 .516z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="device-name">Android</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a class="sub-menu-list-item-link" href="#">
+                                    <svg title="MacOS" class="sub-menu-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12.023 8.677c-1.404 0-2.574 1.147-2.574 2.551s1.147 2.574 2.551 2.574 2.574-1.147 2.574-2.551c0-1.404-1.146-2.551-2.551-2.574zm1.241 4.119h-.304l-.936-1.334-.936 1.334h-.304l1.1-1.545-1.1-1.545h.304l.936 1.334.936-1.334h.304l-1.1 1.545 1.1 1.545z">
+                                        </path>
+                                        <path
+                                            d="M19.817 17.383H4.206a.79.79 0 0 1-.796-.796V5.891a.79.79 0 0 1 .796-.796h15.611a.79.79 0 0 1 .796.796v10.696a.79.79 0 0 1-.796.796zM4.206 5.494a.394.394 0 0 0-.398.398v10.696a.41.41 0 0 0 .398.398h15.611a.41.41 0 0 0 .398-.398V5.891a.41.41 0 0 0-.398-.398l-15.611.001zm18.607 13.41H1.187c-.117 0-.187-.117-.187-.21 0-.094.094-.164.187-.187h21.626a.226.226 0 0 1 .187.233c-.023.094-.094.164-.187.164z">
+                                        </path>
+                                    </svg>
+                                    <span class="device-name">Mac</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a class="sub-menu-list-item-link" href="#">
+                                    <svg title="Windows" class="sub-menu-icon"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M11.602 11.134V9.309l-1.989.234v1.591zm.281 0h2.504V8.981l-2.504.304zm-.281.257H9.613v1.592l1.989.234zm.281 0v1.849l2.504.305v-2.154z">
+                                        </path>
+                                        <path
+                                            d="M19.817 17.383H4.206a.79.79 0 0 1-.796-.796V5.891a.79.79 0 0 1 .796-.796h15.611a.79.79 0 0 1 .796.796v10.696a.79.79 0 0 1-.796.796zM4.206 5.494a.394.394 0 0 0-.398.398v10.696a.41.41 0 0 0 .398.398h15.611a.41.41 0 0 0 .398-.398V5.891a.41.41 0 0 0-.398-.398l-15.611.001zm18.607 13.41H1.187c-.117 0-.187-.117-.187-.21 0-.094.094-.164.187-.187h21.626a.226.226 0 0 1 .187.233c-.023.094-.094.164-.187.164z">
+                                        </path>
+                                    </svg>
+                                    <span class="device-name">Windows</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a class="sub-menu-list-item-link" href="#">
+                                    <svg title="Google Chrome" class="sub-menu-icon"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M22.153 20.898H1.815A.808.808 0 0 1 1 20.083V3.917c0-.456.359-.815.815-.815h20.37c.456 0 .815.359.815.815V20.05a.842.842 0 0 1-.847.848zM1.815 3.656a.28.28 0 0 0-.261.261V20.05c0 .13.098.261.261.261h20.37a.28.28 0 0 0 .261-.261V3.917a.258.258 0 0 0-.261-.261H1.815z">
+                                        </path>
+                                        <circle cx="3.151" cy="5.286" r=".456"></circle>
+                                        <circle cx="4.65" cy="5.286" r=".456"></circle>
+                                        <circle cx="6.15" cy="5.286" r=".456"></circle>
+                                        <path
+                                            d="M11.984 10.827c.684 0 1.271.554 1.271 1.271 0 .684-.554 1.271-1.271 1.271a1.272 1.272 0 0 1 0-2.542z">
+                                        </path>
+                                        <path
+                                            d="M11.984 13.89c-.652 0-1.271-.359-1.564-.913L8.855 10.24c-1.01 1.727-.424 3.976 1.336 4.954.359.228.782.359 1.206.424l1.043-1.825a1.281 1.281 0 0 1-.456.097zm0-3.617h3.161c-1.01-1.727-3.227-2.347-4.954-1.336-.358.227-.717.488-.978.814l1.043 1.825a1.717 1.717 0 0 1 1.728-1.303zm3.422.554h-2.119c.326.326.521.782.489 1.271 0 .326-.098.619-.228.913l-1.564 2.705c2.021 0 3.618-1.63 3.618-3.65a3.976 3.976 0 0 0-.196-1.239z">
+                                        </path>
+                                    </svg>
+                                    <span class="device-name">Chrome</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a class="sub-menu-list-item-link" href="#">
+                                    <svg title="Apple TV" class="sub-menu-icon"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12.899 10.51v-.364h-.501v-.569l-.501.114v.455h-.296v.364h.296v1.024a.778.778 0 0 0 .159.546.517.517 0 0 0 .432.159c.114 0 .25-.023.364-.046v-.387c-.068.023-.137.023-.205.023-.182 0-.25-.137-.25-.364v-.955h.502zm1.569-.364l-.319 1.092c-.046.182-.091.341-.137.501-.046-.159-.068-.319-.137-.501l-.319-1.092h-.546l.728 2.07h.501l.774-2.07h-.545zm-3.594.796c0-.228.114-.432.296-.523a.67.67 0 0 0-.523-.273c-.228-.023-.432.137-.546.137s-.296-.137-.478-.114a.645.645 0 0 0-.569.341c-.25.432-.068 1.069.182 1.411.114.182.25.364.432.364s.25-.114.455-.114c.205 0 .273.114.455.114s.319-.182.432-.341c.091-.114.159-.273.205-.41a.731.731 0 0 1-.341-.592zm-.614-1.251a.6.6 0 0 0-.16.432.487.487 0 0 0 .41-.205.576.576 0 0 0 .137-.455.758.758 0 0 0-.387.228z">
+                                        </path>
+                                        <path
+                                            d="M22.34 4.663H1.637A.636.636 0 0 0 1 5.3v11.148c0 .341.273.637.637.637h10.192v1.888H8.758c-.091 0-.182.068-.182.182s.068.182.182.182h6.484c.091 0 .182-.068.182-.182s-.068-.182-.182-.182h-3.071v-1.888h10.192a.636.636 0 0 0 .637-.637V5.3c-.046-.364-.319-.637-.66-.637zm.296 11.762a.277.277 0 0 1-.273.273H1.66a.277.277 0 0 1-.273-.273V5.277c0-.159.137-.273.273-.273h20.703c.159 0 .273.137.273.273v11.148z">
+                                        </path>
+                                    </svg>
+                                    <span class="device-name">Apple TV</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a class="sub-menu-list-item-link" href="#">
+                                    <svg title="CLI" class="sub-menu-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <g transform="translate(-16 -12)" id="Symbols">
+                                            <g id="icon-cli-copy" transform="translate(16 12)">
+                                                <path id="Shape"
+                                                    d="M22.179 20.898H1.821A.821.821 0 0 1 1 20.073V3.927a.82.82 0 0 1 .821-.825h20.357a.821.821 0 0 1 .822.825v16.146a.822.822 0 0 1-.821.825zM1.821 3.663a.26.26 0 0 0-.26.264v16.146a.26.26 0 0 0 .261.264h20.357a.26.26 0 0 0 .261-.264V3.927a.26.26 0 0 0-.261-.264H1.821z">
+                                                </path>
+                                                <circle id="Oval" cx="3.161" cy="5.279" r=".453">
+                                                </circle>
+                                                <circle cx="4.67" cy="5.279" r=".453"></circle>
+                                                <circle cx="6.179" cy="5.279" r=".453"></circle>
+                                                <path id="Path"
+                                                    d="M8.369 14.836a.42.42 0 0 1-.3-.127.423.423 0 0 1 0-.606l1.975-1.982-1.975-1.982a.43.43 0 0 1 .607-.606l2.281 2.281a.43.43 0 0 1 0 .606l-2.281 2.281a.431.431 0 0 1-.307.135z">
+                                                </path>
+                                                <path
+                                                    d="M15.644 13.923h-3.227a.43.43 0 0 0 0 .858h3.227a.43.43 0 0 0 0-.858z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <span class="device-name">CLI</span>
+                                </a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a class="sub-menu-list-item-link" href="#">
+                                    <svg title="VPN" class="sub-menu-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M16.7 22.3H6.4c-.3 0-.5-.1-.5-.4v-20c0-.3.2-.6.5-.6h10.2c.4 0 .5.2.5.6v20c0 .2-.1.4-.4.4zm0-21.5H6.4c-.6 0-1 .5-1 1v20c0 .7.3 1 1 1h10.4c.5 0 .8-.3.8-.9V1.8c0-.6-.3-1-.9-1z">
+                                        </path>
+                                        <path
+                                            d="M12.5 20.1h-1.9c-.2 0-.3.1-.3.3 0 .2.1.3.3.3h1.9c.2 0 .3-.1.3-.3s-.1-.3-.3-.3M10.3 9.2c0-.7.6-1.3 1.3-1.3s1.3.6 1.3 1.3v1.5h-2.6V9.2zm3.3 1.4h-.1V9.2c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.5h-.2c-.5 0-.9.4-.9.9V14c0 .6.4 1 .9 1h4.1c.5 0 .9-.4.9-.9v-2.5c0-.6-.4-1-.9-1z">
+                                        </path>
+                                    </svg>
+                                    <span class="device-name">VPN</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-menu-item">
-                        <a href="#">Insights</a>
+                    <li class="nav-list-item">
+                        <a class="nav-list-item-link text-white" href="#">Insights</a>
+                        <!-- <ul class="sub-menu">
+                            <li class="sub-menu-list-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Global Index</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Ookla 5G Map</a>
+                            </li>
+                        </ul> -->
                     </li>
-                    <li class="nav-menu-item">
-                        <a href="#">Network</a>
+                    <li class="nav-list-item">
+                        <a class="nav-list-item-link text-white" href="#">Network</a>
+                        <!-- <ul class="sub-menu">
+                            <li class="sub-menu-list-item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Global Index</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Ookla 5G Map</a>
+                            </li>
+                        </ul> -->
                     </li>
-                    <li class="nav-menu-item">
-                        <a href="#">Developers</a>
+                    <li class="nav-list-item">
+                        <a class="nav-list-item-link text-white" href="#">Developers</a>
                     </li>
-                    <li class="nav-menu-item">
-                        <a href="#">Enterprise</a>
+                    <li class="nav-list-item">
+                        <a class="nav-list-item-link text-white" href="#">Enterprise</a>
+                        <!-- <ul class="sub-menu">
+                            <li class="sub-menu-list-item">
+                                <a href="#">Speedtest Intelligence</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Cell Analytics</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">SpatialBuzz</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Speedtest Powered</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">GIS Solutions</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Speedtest Custom</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">CellMaps</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">TowerSource</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">MapELEMENTS</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Partners & Programs</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Downdetector Enterprise</a>
+                            </li>
+                        </ul> -->
                     </li>
-                    <li class="nav-menu-item">
-                        <a href="#">About</a>
+                    <li class="nav-list-item">
+                        <a class="nav-list-item-link text-white" href="#">About</a>
+                        <!-- <ul class="sub-menu">
+                            <li class="sub-menu-list-item">
+                                <a href="#">Press</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Knowledge Base</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Advertise</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Careers</a>
+                            </li>
+                        </ul> -->
                     </li>
-                    <li class="nav-menu-item">
-                        <a href="#">
-                            <img src="./img/user.svg" class="user-icon" alt="User icon">
+                    <li class="nav-list-item">
+                        <a class="nav-list-item-link text-white" href="#">
+                            <svg title="User icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns="http://www.w3.org/2000/svg" class="user-icon" width="24" height="24">
+                                <defs>
+                                    <symbol id="ic_account-line" viewBox="0 0 24 24">
+                                        <path
+                                            d="M22.27 22.385a.73.73 0 0 1-.733-.727v-.483c0-1.337-.83-2.536-2.062-2.976-1.518-.545-4.037-1.194-7.475-1.194s-5.957.65-7.47 1.19c-1.23.44-2.06 1.638-2.06 2.975v.48a.735.735 0 0 1-1.47.004v-.48c0-1.957 1.22-3.706 3.036-4.355 1.622-.584 4.317-1.277 7.964-1.277s6.34.693 7.964 1.276C21.78 17.47 23 19.22 23 21.174v.48c0 .4-.33.73-.73.73zM12 3.085c2.425 0 4.4 1.975 4.4 4.4s-1.974 4.4-4.4 4.4-4.4-1.973-4.4-4.4 1.975-4.4 4.4-4.4m0-1.468a5.87 5.87 0 0 0 0 11.737 5.87 5.87 0 0 0 0-11.74v.003z">
+                                        </path>
+                                    </symbol>
+                                </defs>
+                                <use xlink:href="#ic_account-line" fill="#FFFFFF"></use>
+                            </svg>
                             Log In
                         </a>
+                        <!-- <ul class="sub-menu">
+                            <li class="sub-menu-list-item">
+                                <a href="#">Results History</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Settings</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Help</a>
+                            </li>
+                            <li class="sub-menu-list-item">
+                                <a href="#">Create Account</a>
+                            </li>
+                        </ul> -->
                     </li>
                 </ul>
             </nav>
@@ -56,13 +339,13 @@
                 <header>
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="https://www.speedtest.net/results" class="text-uppercase">
                                 <img src="./img/check.svg" alt="Check icon">
                                 Results
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.speedtest.net/settings" class="text-uppercase">
                                 <img src="./img/settings.svg" alt="Settings icon">
                                 Settings
                             </a>
@@ -71,21 +354,23 @@
                 </header>
 
                 <main class="result">
-                    <a href="#">Go</a>
+                    <h2>
+                        <a href="#" class="connection-test-button">Go</a>
+                    </h2>
 
                     <div class="connection-information">
                         <div class="connection-company">
-                            <span class="connection-name">Vivo</span>
-                            <span class="connection-ip">177.62.103.122</span>
+                            <span class="connection-name">Company name</span>
+                            <span class="connection-ip">000.00.000.000</span>
                             <img class="user-icon" src="./img/user.svg" alt="User icon">
                         </div>
 
-                        <div class="server">
-                            <a href="#" class="server-name"></a>
-                            <span class="server-city"></span>
+                        <div class="server-information">
+                            <a href="#" class="server-name">Server name</a>
+                            <span class="server-city">City</span>
                             <img class="globe-icon" src="" alt="Globe icon">
 
-                            <a href="#" class="change-server">Change Server</a>
+                            <a href="#" class="change-server-link">Change Server</a>
                         </div>
                     </div>
                 </main>
@@ -107,47 +392,47 @@
                     apps
                     for:</p>
 
-                <ul>
+                <ul class="device-list">
                     <li class="device">
-                        <a href="#">
+                        <a href="https://www.speedtest.net/apps/android">
                             <img class="device-image" src="./img/android.svg" alt="Android">
                             <span class="device-name">Android</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="#">
+                        <a href="https://www.speedtest.net/apps/ios">
                             <img class="device-image" src="./img/ios.svg" alt="IOS">
-                            <span class="device-name"></span>
+                            <span class="device-name">IOS</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="#">
+                        <a href="https://www.speedtest.net/apps/windows">
                             <img class="device-image" src="./img/windows.svg" alt="Windows">
-                            <span class="device-name"></span>
+                            <span class="device-name">Windows</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="#">
+                        <a href="https://www.speedtest.net/apps/mac">
                             <img class="device-image" src="./img/macos.svg" alt="macOS">
-                            <span class="device-name"></span>
+                            <span class="device-name">Mac</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="#">
+                        <a href="https://www.speedtest.net/apps/chrome">
                             <img class="device-image" src="./img/chrome-os.svg" alt="Chrome OS">
-                            <span class="device-name"></span>
+                            <span class="device-name">Chrome</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="#">
+                        <a href="https://www.speedtest.net/apps/appletv">
                             <img class="device-image" src="./img/apple-tv.svg" alt="Apple TV device">
-                            <span class="device-name"></span>
+                            <span class="device-name">AppleTV</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="#">
+                        <a href="https://www.speedtest.net/apps/cli">
                             <img class="device-image" src="./img/cli.svg" alt="CLI - Command line">
-                            <span class="device-name"></span>
+                            <span class="device-name">CLI</span>
                         </a>
                     </li>
                 </ul>
@@ -155,29 +440,29 @@
 
             <section class="other-information">
                 <div class="information">
-                    <img src="./img/lamp.svg" alt="Lamp icon">
-                    <span>OOKLA INSIGHTS&trade;</span>
+                    <img src="./img/lamp.svg" class="lamp-icon" alt="Lamp icon">
+                    <span class="text-uppercase">Ookla Insights&trade;</span>
                     <p>Read the latest analyses of mobile and fixed network performance around the world.</p>
                     <a href="#">Subscribe</a>
                 </div>
 
                 <div class="information">
                     <img src="./img/globe-colorful.svg" class="globe-icon-colorful" alt="Globe icon">
-                    <span>SPEEDTEST GLOBAL INDEX&trade;</span>
+                    <span class="text-uppercase">Speedtest Global Index&trade;</span>
                     <p>Find out how your country's internet ranks on the Speedtest Global Index.</p>
                     <a href="#">See Rankings</a>
                 </div>
 
                 <div class="information">
-                    <img src="./img/5g-connection.svg" alt="5G icon">
-                    <span>OOKLA 5G MAP&trade;</span>
+                    <img src="./img/5g-connection.svg" class="5g-connection" alt="5G icon">
+                    <span class="text-uppercase">Ookla 5G Map&trade;</span>
                     <p>Discover your nearest 5G deployment on the Ookla 5G Map.</p>
                     <a href="#">View Map</a>
                 </div>
 
                 <div class="information">
-                    <img src="./img/enterprise.svg" alt="Enterprise building icon">
-                    <span>ENTERPRISE SOLUTIONS</span>
+                    <img src="./img/enterprise.svg" class="enterprise-icon" alt="Enterprise building icon">
+                    <span>Enterprise Solutions</span>
                     <p>Learn how to benefit from enterprise-level data on network performance.</p>
                     <a href="#">See Solutions</a>
                 </div>
@@ -189,7 +474,7 @@
         <div class="wrapper">
             <main>
                 <div class="speedtest">
-                    <a href="#">Speedtest&reg;</a>
+                    <a class="text-uppercase" href="#">Speedtest&reg;</a>
 
                     <ul class="main-links">
                         <li>
@@ -229,7 +514,7 @@
                 </div>
 
                 <div class="apps">
-                    <a href="#">Apps</a>
+                    <a class="text-uppercase" href="#">Apps</a>
 
                     <ul>
                         <li>
@@ -260,7 +545,7 @@
                 </div>
 
                 <div class="account">
-                    <h3>Conta</h3>
+                    <h3 class="text-uppercase">Account</h3>
 
                     <ul>
                         <li>
@@ -282,7 +567,7 @@
                 </div>
 
                 <div class="enterprise">
-                    <a href="#">Enterprise</a>
+                    <a class="text-uppercase" href="#">Enterprise</a>
 
                     <ul>
                         <li>
@@ -295,7 +580,7 @@
                 </div>
 
                 <div class="ookla-brands">
-                    <h3>Ookla&reg; Brands</h3>
+                    <h3 class="text-uppercase">Ookla&reg; Brands</h3>
 
                     <ul>
                         <li>
@@ -328,7 +613,7 @@
                 </div>
 
                 <div class="languages">
-                    <h3>Languages</h3>
+                    <h3 class="text-uppercase">Languages</h3>
 
                     <ul>
                         <li>
@@ -387,7 +672,7 @@
 
                 <div class="ziff-davis">
                     <h3>
-                        <a href="#">Ziff Davis</a>
+                        <a class="text-uppercase" href="#">Ziff Davis</a>
                     </h3>
 
                     <ul>
@@ -417,9 +702,10 @@
             </main>
 
             <footer>
-                <p>Ookla®, Speedtest®, and Speedtest Intelligence® are among some of the federally registered trademarks
+                <small>Ookla®, Speedtest®, and Speedtest Intelligence® are among some of the federally registered
+                    trademarks
                     of Ookla, LLC and may only be used with explicit written permission. © 2006-2021 Ookla, LLC. All
-                    Rights Reserved</p>
+                    Rights Reserved</small>
 
                 <ul>
                     <li>
