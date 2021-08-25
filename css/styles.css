@@ -104,6 +104,26 @@ body {
   transform: translateX(-50%);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  display: none;
+}
+
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: 0 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  top: -8px;
+  left: 50%;
+  border-color: #26273b transparent;
+  border-width: 0 8px 8px;
+  transform: translateX(-50%);
+}
+
+.nav-list-item:hover .sub-menu {
+  display: block;
 }
 
 .sub-menu-enterprise {
