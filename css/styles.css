@@ -88,8 +88,10 @@ body {
 }
 
 .nav-list-item-link .user-icon {
-  width: 16px;
+  width: 1.4rem;
+  height: 1.4rem;
   padding-right: 0.4rem;
+  fill: var(--text-color);
 }
 
 .sub-menu {
