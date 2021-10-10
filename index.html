@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://b.cdnst.net/fonts/HCo_fonts.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <title>Speedtest by Ookla - The Global Broadband Speed Test</title>
 </head>
 
@@ -377,53 +378,171 @@
         <div class="wrapper">
             <section class="network-test">
                 <header>
-                    <ul>
-                        <li>
-                            <a href="https://www.speedtest.net/results" class="text-uppercase">
-                                <img src="./img/check.svg" alt="Check icon">
-                                Results
+                    <ul class="header-list">
+                        <li class="header-list-item">
+                            <a href="https://www.speedtest.net/results" class="text-uppercase header-list-item-link">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" title="Check icon"
+                                    xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-larger icon"
+                                    id="check-icon">
+                                    <defs>
+                                        <symbol id="ic_checkcircle" viewBox="0 0 24 24">
+                                            <path
+                                                d="M6.497 12.47c0-.24.095-.487.28-.67a.956.956 0 0 1 1.344 0l1.864 1.846 5.027-5.01a.957.957 0 0 1 1.347 0 .94.94 0 0 1 .01 1.328l-.01.01-5.703 5.682a.955.955 0 0 1-1.345 0L6.77 13.14a.99.99 0 0 1-.273-.67z">
+                                            </path>
+                                            <path
+                                                d="M12 1.006C5.923 1.006 1 5.928 1 12s4.927 10.994 11 10.994c6.077 0 11-4.922 11-10.994S18.077 1.006 12 1.006zm.017 20.163C6.96 21.17 2.86 17.066 2.86 12c0-5.06 4.1-9.17 9.157-9.17s9.158 4.103 9.158 9.17-4.102 9.17-9.158 9.17z">
+                                            </path>
+                                        </symbol>
+                                    </defs>
+                                    <use xlink:href="#ic_checkcircle"></use>
+                                </svg>
+                                <span class="header-list-item-text text-white">Results</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://www.speedtest.net/settings" class="text-uppercase">
-                                <img src="./img/settings.svg" alt="Settings icon">
-                                Settings
+                        <li class="header-list-item">
+                            <a href="https://www.speedtest.net/settings" class="text-uppercase header-list-item-link">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" title="Settings icon"
+                                    xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-larger icon"
+                                    id="settings-icon">
+                                    <defs>
+                                        <symbol id="ic_settingsalt" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21.783 14.12l-1.354-1.2c.038-.33.06-.634.06-.925 0-.297-.017-.594-.06-.924l1.353-1.193a1.94 1.94 0 0 0 .39-2.42l-1.116-1.91a1.964 1.964 0 0 0-2.3-.87l-1.722.562a8.716 8.716 0 0 0-1.634-.936l-.368-1.755c-.188-.9-.99-1.55-1.916-1.55h-2.23c-.917 0-1.72.65-1.913 1.546l-.37 1.756a8.53 8.53 0 0 0-1.633.935L5.247 4.66a1.97 1.97 0 0 0-2.3.868L1.83 7.438a1.94 1.94 0 0 0 .39 2.42l1.35 1.195c-.04.33-.062.638-.062.935 0 .297.017.6.06.93l-1.353 1.2a1.94 1.94 0 0 0-.39 2.42l1.122 1.916a1.964 1.964 0 0 0 2.3.87l1.728-.562c.506.37 1.05.682 1.634.93l.368 1.76c.187.9.99 1.548 1.915 1.548h2.23c.918 0 1.72-.65 1.914-1.546l.37-1.76a8.583 8.583 0 0 0 1.633-.936l1.722.56a1.972 1.972 0 0 0 2.3-.868l1.117-1.91a1.95 1.95 0 0 0-.397-2.42zm-.726 1.765l-1.117 1.91a.667.667 0 0 1-.78.29l-2.384-.775-.275.22c-.566.45-1.21.82-1.903 1.09l-.33.127-.512 2.443a.66.66 0 0 1-.644.517h-2.228a.656.656 0 0 1-.644-.517l-.512-2.438-.33-.127a7.237 7.237 0 0 1-1.904-1.084l-.27-.214-2.382.777a.67.67 0 0 1-.78-.292L2.94 15.903a.64.64 0 0 1 .132-.803l1.876-1.663-.055-.347c-.066-.413-.093-.76-.093-1.09s.028-.677.094-1.09l.055-.352-1.876-1.656a.64.64 0 0 1-.132-.803l1.123-1.916a.667.667 0 0 1 .78-.292l2.378.776.275-.22c.567-.45 1.21-.82 1.904-1.084l.33-.127.512-2.432a.66.66 0 0 1 .644-.517h2.23a.65.65 0 0 1 .643.517l.513 2.438.33.127c.693.27 1.337.633 1.904 1.09l.275.22 2.377-.776c.296-.1.626.028.78.292l1.117 1.91c.154.263.1.6-.132.802L19.05 10.57l.054.347c.06.407.094.754.094 1.084s-.028.672-.094 1.08l-.055.347 1.88 1.662c.226.2.28.53.127.795z">
+                                            </path>
+                                            <path
+                                                d="M12 15.23c-1.8 0-3.26-1.453-3.26-3.236S10.206 8.758 12 8.758s3.257 1.453 3.257 3.236S13.8 15.23 12 15.23zm0-5.178c-1.085 0-1.965.87-1.965 1.942s.88 1.942 1.964 1.942 1.963-.87 1.963-1.942-.88-1.942-1.964-1.942z">
+                                            </path>
+                                        </symbol>
+                                    </defs>
+                                    <use xlink:href="#ic_settingsalt"></use>
+                                </svg>
+                                <span class="header-list-item-text text-white">Settings</span>
                             </a>
                         </li>
                     </ul>
                 </header>
 
                 <main class="result">
-                    <h2>
-                        <a href="#" class="connection-test-button">Go</a>
-                    </h2>
+                    <div class="connection-test-button-container">
+                        <h2>
+                            <a href="#" class="connection-test-button-link text-white text-uppercase">Go</a>
+                        </h2>
+                    </div>
 
                     <div class="connection-information">
                         <div class="connection-company">
-                            <span class="connection-name">Company name</span>
-                            <span class="connection-ip">000.00.000.000</span>
-                            <img class="user-icon" src="./img/user.svg" alt="User icon">
+                            <div class="company-name-connection-ip-container">
+                                <span class="company-name text-white">Company</span>
+                                <span class="connection-ip text-gray">000.00.000.000</span>
+                            </div>
+
+                            <div class="icon-container user-icon-container">
+                                <svg title="User icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="svg-icon connection-information-icon user-icon">
+                                    <defs>
+                                        <symbol id="ic_account-line" viewBox="0 0 24 24">
+                                            <path
+                                                d="M22.27 22.385a.73.73 0 0 1-.733-.727v-.483c0-1.337-.83-2.536-2.062-2.976-1.518-.545-4.037-1.194-7.475-1.194s-5.957.65-7.47 1.19c-1.23.44-2.06 1.638-2.06 2.975v.48a.735.735 0 0 1-1.47.004v-.48c0-1.957 1.22-3.706 3.036-4.355 1.622-.584 4.317-1.277 7.964-1.277s6.34.693 7.964 1.276C21.78 17.47 23 19.22 23 21.174v.48c0 .4-.33.73-.73.73zM12 3.085c2.425 0 4.4 1.975 4.4 4.4s-1.974 4.4-4.4 4.4-4.4-1.973-4.4-4.4 1.975-4.4 4.4-4.4m0-1.468a5.87 5.87 0 0 0 0 11.737 5.87 5.87 0 0 0 0-11.74v.003z">
+                                            </path>
+                                        </symbol>
+                                    </defs>
+                                    <use xlink:href="#ic_account-line"></use>
+                                </svg>
+                            </div>
                         </div>
 
                         <div class="server-information">
-                            <a href="#" class="server-name">Server name</a>
-                            <span class="server-city">City</span>
-                            <img class="globe-icon" src="" alt="Globe icon">
+                            <div class="server-container">
+                                <div class="icon-container globe-icon-container">
+                                    <svg title="Globe icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="svg-icon svg-icon-ms svg-icon-ring connection-information-icon globe-icon">
+                                        <defs>
+                                            <symbol id="icon-internet" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M12 1C5.94 1 1 5.94 1 12s4.94 11 11 11 11-4.94 11-11S18.06 1 12 1zm9.444 10.247H16.99c-.11-3.487-.86-6.44-2.042-8.26 3.542 1.18 6.177 4.398 6.496 8.26zM12 21.444c-1.557 0-3.273-3.646-3.432-8.69h6.924c-.22 5.043-1.935 8.69-3.492 8.69zM8.568 11.247c.16-5.043 1.875-8.69 3.432-8.69s3.273 3.647 3.432 8.69H8.568zm.48-8.262C7.863 4.812 7.115 7.76 7.005 11.197H2.55c.325-3.812 2.96-7.03 6.497-8.212zm-6.492 9.768H7.01c.11 3.487.86 6.385 2.04 8.212-3.54-1.133-6.175-4.35-6.494-8.212zm12.397 8.26c1.183-1.825 1.93-4.773 2.04-8.21h4.455c-.323 3.812-2.958 7.03-6.495 8.21z">
+                                                </path>
+                                            </symbol>
+                                        </defs>
+                                        <use xlink:href="#icon-internet"></use>
+                                    </svg>
+                                </div>
+                                <div class="server-name-city">
+                                    <a href="#" class="server-name text-white">Server name</a>
+                                    <span class="server-city text-gray">City</span>
+                                </div>
+                            </div>
 
-                            <a href="#" class="change-server-link">Change Server</a>
+                            <a href="#" class="server-link">Change Server</a>
                         </div>
                     </div>
                 </main>
 
                 <footer class="connection-type">
-                    <span class="connections">Connections</span>
+                    <span class="connections-text">Connections</span>
 
-                    <a href="#" class="multi-connection">Multi</a>
-                    <a href="#">
-                        <img class="connection-type-icon" src="./img/single-connection.svg" alt="Connection type icon">
-                        <!-- <img class="connection-type-icon" src="./img/multi-connection.svg" alt="Connection type icon"> -->
-                    </a>
-                    <a href="#" class="single-connection">Single</a>
+                    <div class="connections-container">
+                        <a href="#" class="multi-connection text-white">Multi</a>
+                        <div class="icon-container connection-type-container">
+                            <svg title="Multi connection icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="svg-icon svg-icon-ms svg-icon-ring active connection-type-icon"
+                                data-mode="multi">
+                                <defs>
+                                    <symbol id="ic_multi" viewBox="0 0 24 24">
+                                        <path
+                                            d="M1.733 3.44h1.955a.733.733 0 0 1 0 1.466H1.734a.733.733 0 0 1 0-1.466zM6.376 3.197a.978.978 0 0 1 0 1.956.98.98 0 0 1 0-1.956zM9.31 3.197a.978.978 0 0 1 0 1.956.978.978 0 0 1 0-1.956zM12.242 3.197a.978.978 0 0 1 0 1.956.978.978 0 0 1 0-1.956zM14.93 3.44h2.933a.733.733 0 0 1 0 1.466H14.93a.733.733 0 0 1 0-1.466z">
+                                        </path>
+                                        <path
+                                            d="M17.433 1.247l2.42 2.42a.734.734 0 0 1-1.037 1.037l-2.42-2.42a.732.732 0 0 1 1.037-1.037z">
+                                        </path>
+                                        <path
+                                            d="M16.397 6.076l2.42-2.42a.734.734 0 0 1 1.037 1.037l-2.42 2.42a.732.732 0 0 1-1.037-1.037z">
+                                        </path>
+                                        <path
+                                            d="M1.733 19.082h1.955a.733.733 0 0 1 0 1.466H1.734a.733.733 0 0 1 0-1.466zM6.376 18.837a.978.978 0 0 1 0 1.956.978.978 0 0 1-.978-.978c0-.54.44-.978.978-.978zM9.31 18.837a.978.978 0 0 1 0 1.956.98.98 0 0 1 0-1.956zM12.242 18.837a.978.978 0 0 1 0 1.956.978.978 0 0 1 0-1.956zM14.93 19.082h2.933a.733.733 0 0 1 0 1.466H14.93a.733.733 0 0 1 0-1.466z">
+                                        </path>
+                                        <path
+                                            d="M17.433 16.887l2.42 2.42a.734.734 0 0 1-1.037 1.037l-2.42-2.42a.734.734 0 0 1 1.037-1.037z">
+                                        </path>
+                                        <path
+                                            d="M16.397 21.716l2.42-2.42a.734.734 0 0 1 1.037 1.037l-2.42 2.42a.732.732 0 0 1-1.037-1.037z">
+                                        </path>
+                                        <path
+                                            d="M4.666 11.26H6.62a.733.733 0 0 1 0 1.466H4.667a.733.733 0 0 1 0-1.466zM9.31 11.017a.978.978 0 0 1 0 1.956.98.98 0 0 1 0-1.956zM12.242 11.017a.978.978 0 0 1 0 1.956.978.978 0 0 1 0-1.956zM15.174 11.017a.978.978 0 0 1 0 1.956.98.98 0 0 1 0-1.956zM17.863 11.26h2.933a.733.733 0 0 1 0 1.466h-2.934a.733.733 0 0 1 0-1.466z">
+                                        </path>
+                                        <path
+                                            d="M20.366 9.067l2.42 2.42a.734.734 0 0 1-1.037 1.037l-2.42-2.42a.734.734 0 0 1 1.037-1.037z">
+                                        </path>
+                                        <path
+                                            d="M19.33 13.896l2.418-2.42a.734.734 0 0 1 1.037 1.037l-2.42 2.42a.734.734 0 0 1-1.037-1.037z">
+                                        </path>
+                                    </symbol>
+                                </defs>
+                                <use xlink:href="#ic_multi" fill="#9193A8"></use>
+                            </svg>
+                            <!-- <svg title="Single connection icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="svg-icon svg-icon-sm svg-icon-ring connection-type-icon">
+                                <defs>
+                                    <symbol id="ic_single" viewBox="0 0 24 24">
+                                        <path
+                                            d="M1.673 11.322H3.02a.673.673 0 0 1 0 1.346H1.673a.673.673 0 0 1 0-1.346zM5.49 11.097a.898.898 0 0 1 0 1.796.898.898 0 0 1 0-1.796zM8.182 11.097a.898.898 0 0 1 0 1.796.898.898 0 0 1 0-1.796zM10.875 11.097a.898.898 0 0 1 0 1.796.9.9 0 0 1 0-1.796zM13.57 11.097a.898.898 0 0 1 0 1.796.898.898 0 0 1 0-1.796zM16.262 11.097a.898.898 0 0 1 0 1.796.898.898 0 0 1 0-1.796zM18.73 11.322h2.245a.673.673 0 0 1 0 1.346H18.73a.672.672 0 0 1 0-1.346z">
+                                        </path>
+                                        <path
+                                            d="M20.58 9.306l2.223 2.222a.673.673 0 0 1-.952.952l-2.222-2.222a.673.673 0 0 1 0-.952.675.675 0 0 1 .95 0z">
+                                        </path>
+                                        <path
+                                            d="M19.63 13.74l2.22-2.22a.673.673 0 0 1 .952.952l-2.22 2.22a.673.673 0 0 1-.952-.952z">
+                                        </path>
+                                    </symbol>
+                                </defs>
+                                <use xlink:href="#ic_single"></use>
+                            </svg> -->
+                        </div>
+                        <a href="#" class="single-connection text-gray">Single</a>
+                    </div>
                 </footer>
             </section>
 
