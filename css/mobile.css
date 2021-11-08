@@ -131,4 +131,25 @@
     .sub-menu::before {
         content: none;
     }
+
+    /* Main */
+    .result .connection-information {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: min-content;
+    }
+
+    .connection-information .connection-company {
+        margin-bottom: 1rem;
+        direction: rtl;
+    }
+
+    .connection-company .user-icon-container {
+        margin-right: 0.557rem;
+    }
+
+    .connection-information .server-information {
+        margin-left: 0;
+    }
 }
