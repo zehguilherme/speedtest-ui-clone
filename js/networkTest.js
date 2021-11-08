@@ -27,6 +27,14 @@ export function changeConnectionType () {
                 connectionName.classList.add('text-white')
             }
         })
+
+        if (multiConnection.classList.contains('text-white')) {
+            isMultiConnection = true
+        } else {
+            isMultiConnection = false
+        }
+
+        changeConnectionTestButtonColor()
     })
 
     multiConnection.addEventListener('click', () => {

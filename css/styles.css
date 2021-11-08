@@ -2,7 +2,7 @@
 :root {
     --primary-blue: #141526;
     --secondary-blue: #26273b;
-    --text-color: #ffffff;
+    --white: #ffffff;
     --light-blue: #1cbfff;
     --link-blue-hover: #6afff3;
     --gray: #9193a8;
@@ -36,7 +36,7 @@ button {
 }
 
 .text-white {
-    color: var(--text-color);
+    color: var(--white);
 }
 
 .text-gray {
@@ -50,6 +50,9 @@ button {
 }
 
 /***************** DESKTOP *****************/
+
+@media only screen and (min-width: 768px) {
+}
 
 /* Header */
 .header-container {
@@ -70,7 +73,7 @@ button {
 
 #logo {
     width: 9.047rem;
-    fill: var(--text-color);
+    fill: var(--white);
 }
 
 .nav-mobile-controls {
@@ -113,7 +116,7 @@ button {
     width: 1.4rem;
     height: 1.4rem;
     padding-right: 0.4rem;
-    fill: var(--text-color);
+    fill: var(--white);
 }
 
 .sub-menu {
@@ -177,7 +180,7 @@ button {
 }
 
 .sub-menu-list-item-link:hover .sub-menu-icon {
-    fill: var(--text-color);
+    fill: var(--white);
 }
 
 .sub-menu-list-item-link .sub-menu-text {
@@ -185,17 +188,17 @@ button {
 }
 
 .sub-menu-list-item-link:hover .sub-menu-text {
-    color: var(--text-color);
+    color: var(--white);
 }
 
 /* Main */
 .network-test {
     display: grid;
-    grid-template-columns: 1fr minmax(1fr 47.5rem) 1fr;
+    grid-template-columns: minmax(1fr 47.5rem);
     grid-template-areas:
-        ". header ."
-        ". main ."
-        ". footer .";
+        "header"
+        "main"
+        "footer";
     padding: 1.25rem 0;
     background-color: var(--primary-blue);
 }
@@ -236,7 +239,7 @@ button {
     color: var(--light-blue);
 }
 
-.header-list-item .icon {
+.header-list-item-link .icon {
     width: 1rem;
     height: 1rem;
     fill: var(--gray);
@@ -247,20 +250,18 @@ button {
     fill: var(--light-blue);
 }
 
-.network-test main {
+.network-test .result {
     grid-area: main;
-}
-
-.result {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2.938rem;
 }
 
-.connection-test-button-container {
+.result .connection-test-button-container {
     margin: 30px 0;
-    border: 2px solid #26c5dd;
+    border-width: 2px;
+    border-style: solid;
     border-radius: 100%;
     min-width: 11.25rem;
     height: 11.25rem;
@@ -270,30 +271,40 @@ button {
     cursor: pointer;
 }
 
-.connection-test-button-container:hover {
+.multi-connection {
+    border-color: #26c5dd;
+}
+
+.single-connection {
+    border-color: #ffaf77;
+}
+
+.result .connection-test-button-container:hover {
     background-color: #151f30;
 }
 
-.connection-test-button-link {
+.connection-test-button-container .connection-test-button-link {
     font-size: 2.5rem;
     line-height: 11.375rem;
     font-weight: 500;
 }
 
-.connection-information {
+.result .connection-information {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    width: 100%;
 }
 
-.connection-company {
+.connection-information .connection-company {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-right: 1.25rem;
+    width: 100%;
 }
 
-.company-name-connection-ip-container {
+.connection-company .company-name-connection-ip-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -312,13 +323,7 @@ button {
     line-height: 1.5rem;
 }
 
-.connection-information-icon {
-    width: 1.188rem;
-    height: 1.188rem;
-    fill: var(--gray);
-}
-
-.icon-container {
+.connection-information .icon-container {
     border: 1px solid rgba(145, 147, 168, 0.5);
     border-radius: 100%;
     padding: 0.4rem;
@@ -333,58 +338,66 @@ button {
     margin-left: 0.557rem;
 }
 
+.icon-container .connection-information-icon {
+    width: 1.188rem;
+    height: 1.188rem;
+    fill: var(--gray);
+}
+
 .server-information {
     margin-left: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    width: 100%;
 }
 
-.globe-icon-container {
-    margin-right: 0.557rem;
-}
-
-.server-container {
-    display: flex;
+.server-information .server-container {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    grid-template-rows: 3.188rem 1fr;
+    grid-template-areas:
+        "globe-icon-container server-name-city"
+        ". server-name-city";
     align-items: center;
 }
 
-.server-name-city {
+.server-container .globe-icon-container {
+    grid-area: globe-icon-container;
+    margin-right: 0.557rem;
+}
+
+.server-container .server-name-city {
+    grid-area: server-name-city;
     display: flex;
     flex-direction: column;
 }
 
-.server-container .server-name {
+.server-name-city .server-name {
     font-size: 1.063rem;
     font-weight: 400;
     line-height: 1.688rem;
 }
 
-.server-container .server-name:hover {
+.server-name-city .server-name:hover {
     color: var(--link-blue-hover);
 }
 
-.server-container .server-city {
+.server-name-city .server-city {
     font-size: 0.983rem;
     font-weight: 400;
     line-height: 1.5rem;
 }
 
-.server-link {
+.server-name-city .server-link {
     font-size: 1rem;
     line-height: 1.625rem;
     color: var(--light-blue);
 }
 
-.server-link:hover {
+.server-name-city .server-link:hover {
     color: var(--link-blue-hover);
 }
 
-.network-test footer {
-    grid-area: footer;
-}
-
 .connection-type {
+    grid-area: footer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,15 +410,45 @@ button {
     margin-bottom: 0.25rem;
 }
 
-.connections-container {
+.connection-type .connections-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-.connections-container .connection-type-icon {
+.connections-container .connection-type-link:hover:not(.text-white) {
+    color: var(--link-blue-hover);
+}
+
+.connections-container .connection-icon-container {
+    border: 1px solid rgba(145, 147, 168, 0.5);
+    border-radius: 100%;
+    padding: 0.4rem;
+    width: 37.09px;
+    height: 37.09px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 0.813rem;
+    cursor: pointer;
+}
+
+.connections-container .connection-icon-container:hover {
+    border-color: var(--white);
+}
+
+.connection-icon-container .connection-icon {
     width: 1.188rem;
     height: 1.188rem;
     fill: var(--gray);
+}
+
+.connection-icon-container:hover .connection-icon {
+    fill: var(--white);
+}
+
+.connection-icon-container .connection-icon:not(.active) {
+    display: none;
 }

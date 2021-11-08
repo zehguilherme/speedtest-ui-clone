@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -471,10 +471,10 @@
                                 <div class="server-name-city">
                                     <a href="#" class="server-name text-white">Server name</a>
                                     <span class="server-city text-gray">City</span>
+                                    <a href="#" class="server-link">Change Server</a>
                                 </div>
                             </div>
 
-                            <a href="#" class="server-link">Change Server</a>
                         </div>
                     </div>
                 </main>
@@ -483,12 +483,12 @@
                     <span class="connections-text">Connections</span>
 
                     <div class="connections-container">
-                        <a href="#" class="multi-connection text-white">Multi</a>
-                        <div class="icon-container connection-type-container">
+                        <a href="#" class="connection-type-link text-white" id="multi-connection">Multi</a>
+
+                        <div class="icon-container connection-icon-container">
                             <svg title="Multi connection icon" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="svg-icon svg-icon-ms svg-icon-ring active connection-type-icon"
-                                data-mode="multi">
+                                class="svg-icon svg-icon-ms svg-icon-ring active connection-icon" data-mode="multi">
                                 <defs>
                                     <symbol id="ic_multi" viewBox="0 0 24 24">
                                         <path
@@ -520,11 +520,12 @@
                                         </path>
                                     </symbol>
                                 </defs>
-                                <use xlink:href="#ic_multi" fill="#9193A8"></use>
+                                <use xlink:href="#ic_multi"></use>
                             </svg>
-                            <!-- <svg title="Single connection icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+
+                            <svg title="Single connection icon" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="svg-icon svg-icon-sm svg-icon-ring connection-type-icon">
+                                class="svg-icon svg-icon-sm svg-icon-ring connection-icon">
                                 <defs>
                                     <symbol id="ic_single" viewBox="0 0 24 24">
                                         <path
@@ -539,9 +540,10 @@
                                     </symbol>
                                 </defs>
                                 <use xlink:href="#ic_single"></use>
-                            </svg> -->
+                            </svg>
                         </div>
-                        <a href="#" class="single-connection text-gray">Single</a>
+
+                        <a href="#" class="connection-type-link text-gray" id="single-connection">Single</a>
                     </div>
                 </footer>
             </section>
@@ -894,7 +896,7 @@
         </div>
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" type="module"></script>
 </body>
 
 </html>
