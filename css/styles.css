@@ -405,6 +405,7 @@ button {
     grid-area: server-name-city;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .server-name-city .server-name {
