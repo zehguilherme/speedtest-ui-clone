@@ -291,7 +291,11 @@ button {
     font-weight: 500;
 }
 
-.result .ring {
+.connection-test-button-container:hover .ring {
+    animation: none;
+}
+
+.connection-test-button-container .ring {
     position: absolute;
     border: 2px #26c5dd solid;
     border-radius: 100%;
