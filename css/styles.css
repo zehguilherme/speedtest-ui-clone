@@ -1,4 +1,4 @@
-/* GLOBAL */
+/***************** GLOBAL *****************/
 :root {
     --primary-blue: #141526;
     --secondary-blue: #26273b;
@@ -43,6 +43,12 @@ button {
     color: var(--gray);
 }
 
+.wrapper {
+    position: relative;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
 /* Connections */
 .multi-connection {
     border-color: #26c5dd;
@@ -52,10 +58,22 @@ button {
     border-color: #ffaf77;
 }
 
-.wrapper {
-    position: relative;
-    max-width: 1260px;
-    margin: 0 auto;
+/* Result icon */
+.result-icon-container {
+    border: 1px solid rgba(145, 147, 168, 0.5);
+    border-radius: 100%;
+    padding: 0.4rem;
+    width: 37.09px;
+    height: 37.09px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-icon-container .result-icon {
+    width: 1.188rem;
+    height: 1.188rem;
+    fill: var(--gray);
 }
 
 /***************** DESKTOP *****************/
@@ -63,7 +81,7 @@ button {
 @media only screen and (min-width: 768px) {
 }
 
-/* Header */
+/* Header - menu */
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -364,25 +382,8 @@ button {
     line-height: 1.5rem;
 }
 
-.connection-information .icon-container {
-    border: 1px solid rgba(145, 147, 168, 0.5);
-    border-radius: 100%;
-    padding: 0.4rem;
-    width: 37.09px;
-    height: 37.09px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .connection-company .user-icon-container {
     margin-left: 0.557rem;
-}
-
-.icon-container .connection-information-icon {
-    width: 1.188rem;
-    height: 1.188rem;
-    fill: var(--gray);
 }
 
 .server-information {
@@ -464,27 +465,12 @@ button {
 }
 
 .connections-container .connection-icon-container {
-    border: 1px solid rgba(145, 147, 168, 0.5);
-    border-radius: 100%;
-    padding: 0.4rem;
-    width: 37.09px;
-    height: 37.09px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     margin: 0 0.813rem;
     cursor: pointer;
 }
 
 .connections-container .connection-icon-container:hover {
     border-color: var(--white);
-}
-
-.connection-icon-container .connection-icon {
-    width: 1.188rem;
-    height: 1.188rem;
-    fill: var(--gray);
 }
 
 .connection-icon-container:hover .connection-icon {
