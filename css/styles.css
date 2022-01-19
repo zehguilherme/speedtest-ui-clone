@@ -9,6 +9,21 @@
     --mobile-navbar: #212539;
 }
 
+@font-face {
+    font-family: "Gauge Mono Regular";
+    src: url("//db.onlinewebfonts.com/t/5d419330f5cf064d02b4d9bd3f1cd7f5.eot");
+    src: url("//db.onlinewebfonts.com/t/5d419330f5cf064d02b4d9bd3f1cd7f5.eot?#iefix")
+            format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/5d419330f5cf064d02b4d9bd3f1cd7f5.woff2")
+            format("woff2"),
+        url("//db.onlinewebfonts.com/t/5d419330f5cf064d02b4d9bd3f1cd7f5.woff")
+            format("woff"),
+        url("//db.onlinewebfonts.com/t/5d419330f5cf064d02b4d9bd3f1cd7f5.ttf")
+            format("truetype"),
+        url("//db.onlinewebfonts.com/t/5d419330f5cf064d02b4d9bd3f1cd7f5.svg#Gauge Mono Regular")
+            format("svg");
+}
+
 html,
 body {
     font-family: "HCo Gotham SSm", "Times", sans-serif;
