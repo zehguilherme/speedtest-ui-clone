@@ -236,20 +236,24 @@ button {
 /* Main */
 .network-test {
     display: grid;
-    grid-template-columns: minmax(1fr 47.5rem);
+    grid-template-columns: 1fr 47.5rem 1fr;
     grid-template-areas:
-        "header"
-        "main"
-        "footer";
+        ". header ."
+        ". main ."
+        ". footer. ";
     padding: 1.25rem 0;
     background-color: var(--primary-blue);
 }
 
-.network-test header {
+.network-test .results-settings-container {
     grid-area: header;
 }
 
-.network-test .header-list {
+.results-settings-container.disabled {
+    display: none;
+}
+
+.results-settings-container .header-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -314,6 +318,10 @@ button {
     cursor: pointer;
 }
 
+.connection-test-button-container.disabled {
+    display: none;
+}
+
 .result .connection-test-button-container:hover {
     background-color: #151e2f;
 }
@@ -361,6 +369,89 @@ button {
         opacity: 0;
         transform: scale(1.3);
     }
+}
+
+.result .connection-test-happening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.connection-test-happening .connection-parameters {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5.681rem;
+    justify-content: center;
+}
+
+.connection-parameters.disabled {
+    display: none;
+}
+
+.connection-parameters .parameter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parameter .parameter-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parameter-title .parameter-icon {
+    width: 0.928rem;
+    height: 0.928rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+}
+
+.parameter-title #icon-ping {
+    fill: var(--white);
+}
+
+.parameter-title #icon-download {
+    fill: var(--link-blue-hover);
+}
+
+.parameter-title #icon-upload {
+    fill: #bf71ff;
+}
+
+.parameter-title .parameter-name {
+    margin-right: 0.3rem;
+    margin-left: 0.4rem;
+}
+
+.parameter-title .parameter-name,
+.parameter-title .parameter-unit {
+    font-size: 0.813rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+}
+
+.parameter-title .parameter-unit {
+    color: var(--gray);
+}
+
+.parameter .parameter-value {
+    font-family: "Gauge Mono Regular", "HCo Gotham SSm", "Times", sans-serif;
+    font-size: 2.875rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+}
+
+#download-upload-line-graphic {
+    width: 100%;
+}
+
+#download-upload-line-graphic.disabled {
+    display: none;
 }
 
 .result .connection-information {
@@ -459,6 +550,10 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.connection-type.disabled {
+    display: none;
 }
 
 .connection-type .connections-text {

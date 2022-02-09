@@ -1,0 +1,3 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="svg-icon" width="24.01"  height="23.99" ><defs><symbol id="icon-ping" viewBox="0 0 24.01 23.99" fill="#9193A8">
+    <path d="M48.5,169.61a1,1,0,0,0,.77.39h10a1,1,0,0,0,0-2H51.19l3.06-3.06a1,1,0,1,0-1.41-1.41l-4.54,4.54a1,1,0,0,0,0,1.41A1,1,0,0,0,48.5,169.61ZM54.26,159a12,12,0,1,0,12,12A12,12,0,0,0,54.26,159Zm0,22a10,10,0,1,1,10-10A10,10,0,0,1,54.28,181ZM60,172.39a1,1,0,0,0-.77-0.39h-10a1,1,0,1,0,0,2h8.09l-3.06,3.06a1,1,0,1,0,1.41,1.41l4.54-4.54a1,1,0,0,0,0-1.41A1,1,0,0,0,60,172.39Z" transform="translate(-42.26 -159.01)" fill="#9193A8"></path>
+  </symbol></defs><use xlink:href="#icon-ping" fill="#FFFFFF"></use></svg>

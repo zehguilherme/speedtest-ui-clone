@@ -133,6 +133,14 @@
     }
 
     /* Main */
+    .network-test {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
     .result .connection-information {
         flex-direction: column;
         align-items: center;

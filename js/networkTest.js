@@ -70,6 +70,26 @@ export function changeConnectionType () {
     })
 }
 
+export function executeConnectionTest () {
+    const connectionTestButton = document.querySelector('.connection-test-button-container')
+    const resultsSettingsContainer = document.querySelector('.results-settings-container')
+    const connectionParametersContainer = document.querySelector('.connection-parameters')
+    const connectionTypeContainer = document.querySelector('.connection-type')
+    const downloadUploadgraphic = document.querySelector('#download-upload-line-graphic')
+
+    connectionTestButton.addEventListener('click', () => {
+        resultsSettingsContainer.classList.add('disabled')
+
+        connectionTypeContainer.classList.add('disabled')
+
+        connectionTestButton.classList.add('disabled')
+
+        connectionParametersContainer.classList.remove('disabled')
+
+        downloadUploadgraphic.classList.remove('disabled')
+    })
+}
+
 function changeConnectionTestButtonColor () {
     const connectionTestButton = document.querySelector('.connection-test-button-container')
 

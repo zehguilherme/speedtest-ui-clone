@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- HCo -->
     <link rel="stylesheet" href="https://b.cdnst.net/fonts/HCo_fonts.css">
+    <!-- Gauge Mono Regular -->
+    <link href="//db.onlinewebfonts.com/c/5d419330f5cf064d02b4d9bd3f1cd7f5?family=Gauge+Mono+Regular" rel="stylesheet"
+        type="text/css" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <title>Speedtest by Ookla - The Global Broadband Speed Test</title>
 </head>
 
@@ -377,7 +382,7 @@
     <main>
         <div class="wrapper">
             <section class="network-test">
-                <header>
+                <header class="results-settings-container">
                     <ul class="header-list">
                         <li class="header-list-item">
                             <a href="https://www.speedtest.net/results" class="text-uppercase header-list-item-link">
@@ -428,6 +433,79 @@
                         <h2>
                             <a href="#" class="connection-test-button-link text-white text-uppercase">Go</a>
                         </h2>
+                    </div>
+
+                    <div class="connection-test-happening">
+                        <div class="connection-parameters disabled">
+                            <div class="parameter">
+                                <div class="parameter-title">
+                                    <svg title="Ping icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg" class="parameter-icon svg-icon" width="24.01"
+                                        height="23.99">
+                                        <defs>
+                                            <symbol id="icon-ping" viewBox="0 0 24.01 23.99">
+                                                <path
+                                                    d="M48.5,169.61a1,1,0,0,0,.77.39h10a1,1,0,0,0,0-2H51.19l3.06-3.06a1,1,0,1,0-1.41-1.41l-4.54,4.54a1,1,0,0,0,0,1.41A1,1,0,0,0,48.5,169.61ZM54.26,159a12,12,0,1,0,12,12A12,12,0,0,0,54.26,159Zm0,22a10,10,0,1,1,10-10A10,10,0,0,1,54.28,181ZM60,172.39a1,1,0,0,0-.77-0.39h-10a1,1,0,1,0,0,2h8.09l-3.06,3.06a1,1,0,1,0,1.41,1.41l4.54-4.54a1,1,0,0,0,0-1.41A1,1,0,0,0,60,172.39Z"
+                                                    transform="translate(-42.26 -159.01)"></path>
+                                            </symbol>
+                                        </defs>
+                                        <use xlink:href="#icon-ping"></use>
+                                    </svg>
+                                    <span class="parameter-name text-white text-uppercase">Ping</span>
+                                    <span class="parameter-unit">ms</span>
+                                </div>
+
+                                <span class="parameter-value text-white">45</span>
+                            </div>
+
+                            <div class="parameter">
+                                <div class="parameter-title">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        class="parameter-icon svg-icon gauge-icon icon-gauge-download test-mode-multi"
+                                        title="Download icon" width="24.01" height="23.99">
+                                        <defs>
+                                            <symbol id="icon-download" viewBox="0 0 24.01 23.99">
+                                                <path
+                                                    d="M54.26,198.5a12,12,0,1,0,12,12A12,12,0,0,0,54.26,198.5Zm0,22a10,10,0,1,1,10-10A10,10,0,0,1,54.28,220.5Zm5-11a1,1,0,0,0-.71.29l-3.3,3.3V205.5a1,1,0,0,0-2,0v7.59L50,209.8a1,1,0,1,0-1.42,1.42l5,5a1,1,0,0,0,1.42,0l5-5A1,1,0,0,0,59.28,209.5Z"
+                                                    transform="translate(-42.26 -198.5)"></path>
+                                            </symbol>
+                                        </defs>
+                                        <use xlink:href="#icon-download"></use>
+                                    </svg>
+                                    <span class="parameter-name text-white text-uppercase">Download</span>
+                                    <span class="parameter-unit">Mbps</span>
+                                </div>
+
+                                <span class="parameter-value text-white">250.00</span>
+                            </div>
+
+                            <div class="parameter">
+                                <div class="parameter-title">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        class="parameter-icon svg-icon gauge-icon icon-gauge-upload test-mode-multi"
+                                        title="Upload icon" wfd-invisible="true" width="24.01" height="23.99">
+                                        <defs>
+                                            <symbol id="icon-upload" viewBox="0 0 24.01 23.99">
+                                                <path
+                                                    d="M54.26,238a12,12,0,1,0,12,12A12,12,0,0,0,54.26,238Zm0,22a10,10,0,1,1,10-10A10,10,0,0,1,54.28,260ZM55,244.28a1,1,0,0,0-1.42,0l-5,5A1,1,0,0,0,50,250.7l3.3-3.3V255a1,1,0,0,0,2,0v-7.59l3.3,3.3A1,1,0,0,0,60,249.29Z"
+                                                    transform="translate(-42.26 -238)"></path>
+                                            </symbol>
+                                        </defs>
+                                        <use xlink:href="#icon-upload"></use>
+                                    </svg>
+                                    <span class="parameter-name text-white text-uppercase">Upload</span>
+                                    <span class="parameter-unit">Mbps</span>
+                                </div>
+
+                                <span class="parameter-value text-white">90.00</span>
+                            </div>
+                        </div>
+
+                        <div id="download-upload-line-graphic"></div>
+
+                        <!-- <canvas id="speedometer-graphic">
+                            <img src="https://picsum.photos/200/300" alt="Speedometer graphic">
+                        </canvas> -->
                     </div>
 
                     <div class="connection-information">
@@ -898,6 +976,7 @@
     </footer>
 
     <script src="./js/main.js" type="module"></script>
+    <script src="./js/graphics.js"></script>
 </body>
 
 </html>
