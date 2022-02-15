@@ -379,6 +379,15 @@ button {
     width: 100%;
 }
 
+.connection-test-happening .network-speedometer {
+    margin-top: 1.25rem;
+    margin-bottom: 2.313rem;
+}
+
+.network-speedometer.disabled {
+    display: none;
+}
+
 .connection-test-happening .connection-parameters {
     width: 100%;
     display: flex;

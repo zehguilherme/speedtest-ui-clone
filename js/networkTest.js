@@ -76,6 +76,7 @@ export function executeConnectionTest () {
     const connectionParametersContainer = document.querySelector('.connection-parameters')
     const connectionTypeContainer = document.querySelector('.connection-type')
     const downloadUploadgraphic = document.querySelector('#download-upload-line-graphic')
+    const networkSpeedometer = document.querySelector('.network-speedometer')
 
     connectionTestButton.addEventListener('click', () => {
         resultsSettingsContainer.classList.add('disabled')
@@ -87,6 +88,8 @@ export function executeConnectionTest () {
         connectionParametersContainer.classList.remove('disabled')
 
         downloadUploadgraphic.classList.remove('disabled')
+
+        networkSpeedometer.classList.remove('disabled')
     })
 }
 
