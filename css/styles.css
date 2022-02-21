@@ -382,6 +382,9 @@ button {
 .connection-test-happening .network-speedometer {
     margin-top: 1.25rem;
     margin-bottom: 2.313rem;
+    width: 100%;
+    height: auto;
+    max-width: 21.25rem;
 }
 
 .network-speedometer.disabled {
