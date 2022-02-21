@@ -141,6 +141,11 @@
             "footer";
     }
 
+    .connection-test-happening .connection-parameters {
+        flex-direction: column;
+        gap: 1.651rem;
+    }
+
     .result .connection-information {
         flex-direction: column;
         align-items: center;
