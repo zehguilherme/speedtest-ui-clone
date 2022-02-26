@@ -1,0 +1,33 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.623rem;
+    background-color: var(--primary-blue);
+}
+
+.logo-heading {
+    padding-left: 1.25rem;
+}
+
+.logo-link:hover :first-child {
+    fill: var(--light-blue);
+}
+
+.logo {
+    width: 9.047rem;
+    fill: var(--white);
+}
+
+.nav-mobile-controls {
+    display: none;
+}
+
+.nav-menu {
+    padding-right: 1.25rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}

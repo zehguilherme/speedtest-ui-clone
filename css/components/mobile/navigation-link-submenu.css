@@ -1,0 +1,16 @@
+@media only screen and (max-width: 768px) {
+    .sub-menu {
+        background-color: var(--mobile-navbar);
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: initial;
+        position: static;
+        transform: none;
+        padding: 0;
+    }
+
+    .sub-menu::before {
+        content: none;
+    }
+}

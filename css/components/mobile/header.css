@@ -1,0 +1,52 @@
+@media only screen and (max-width: 768px) {
+    .header-container {
+        height: 3.213rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: ". logo mobile-controls";
+        justify-items: center;
+        align-items: center;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+        background-color: var(--mobile-navbar);
+    }
+
+    .header-container-without-logo {
+        grid-template-rows: 3.213rem 1fr;
+        grid-template-areas:
+            ". . mobile-controls"
+            ". nav-menu .";
+        min-height: calc(3.213rem + 1438.88px);
+    }
+
+    .logo-heading {
+        padding: 0;
+        grid-area: logo;
+    }
+
+    .logo-heading-disabled {
+        display: none;
+    }
+
+    #logo {
+        width: 7.754rem;
+        height: 0.964rem;
+        fill: var(--gray);
+    }
+
+    .nav-menu {
+        padding: 0;
+        grid-area: nav-menu;
+    }
+
+    .nav-menu-closed {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
