@@ -1,0 +1,56 @@
+@media only screen and (max-width: 768px) {
+    .nav-mobile-controls {
+        display: block;
+        margin-left: auto;
+        grid-area: mobile-controls;
+    }
+
+    .nav-mobile-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-blue);
+        border: none;
+        width: 22px;
+        height: 2px;
+        background: var(--gray);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-mobile-toggle::before,
+    .nav-mobile-toggle::after {
+        content: "";
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background: var(--gray);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav-mobile-toggle::before {
+        transform: translateY(-6px);
+    }
+
+    .nav-mobile-toggle::after {
+        transform: translateY(6px);
+    }
+
+    /* Animation */
+    .nav-mobile-controls.open .nav-mobile-toggle {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .nav-mobile-controls.open .nav-mobile-toggle::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .nav-mobile-controls.open .nav-mobile-toggle::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+}
