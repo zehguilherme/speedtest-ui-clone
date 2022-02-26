@@ -1,0 +1,29 @@
+.nav-list-item {
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.nav-list-item-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-item-link:hover {
+    color: var(--light-blue);
+}
+
+.nav-list-item-link:hover :first-child {
+    fill: var(--light-blue);
+}
+
+.nav-list-item-link:last-child {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-item-link .user-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    padding-right: 0.4rem;
+    fill: var(--white);
+}
