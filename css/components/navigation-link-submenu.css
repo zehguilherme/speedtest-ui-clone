@@ -1,0 +1,71 @@
+.sub-menu {
+    position: absolute;
+    z-index: 2;
+    background-color: var(--secondary-blue);
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    min-width: 12rem;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: none;
+}
+
+.sub-menu::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: 0 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    top: -8px;
+    left: 50%;
+    border-color: var(--secondary-blue) transparent;
+    border-width: 0 8px 8px;
+    transform: translateX(-50%);
+}
+
+.nav-list-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu-enterprise {
+    width: 15.755rem;
+}
+
+.sub-menu-list-item {
+    display: flex;
+    align-items: center;
+    height: 2.563rem;
+}
+
+.sub-menu-list-item-link {
+    display: flex;
+    align-items: center;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
+}
+
+.sub-menu-list-item-link .sub-menu-icon {
+    margin-right: 0.5rem;
+    width: 36px;
+}
+
+.sub-menu-list-item-link .sub-menu-icon {
+    fill: var(--light-blue);
+}
+
+.sub-menu-list-item-link:hover .sub-menu-icon {
+    fill: var(--white);
+}
+
+.sub-menu-list-item-link .sub-menu-text {
+    color: var(--light-blue);
+}
+
+.sub-menu-list-item-link:hover .sub-menu-text {
+    color: var(--white);
+}
