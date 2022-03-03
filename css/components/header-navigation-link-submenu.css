@@ -28,7 +28,7 @@
     transform: translateX(-50%);
 }
 
-.nav-list-item:hover .sub-menu {
+.navigation-list-item:hover .sub-menu {
     display: block;
 }
 

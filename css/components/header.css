@@ -19,15 +19,15 @@
     fill: var(--white);
 }
 
-.nav-mobile-controls {
+.navigation-mobile-controls {
     display: none;
 }
 
-.nav-menu {
+.navigation-menu {
     padding-right: 1.25rem;
 }
 
-.nav-list {
+.navigation-list {
     display: flex;
     align-items: center;
 }

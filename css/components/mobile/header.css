@@ -15,7 +15,7 @@
         grid-template-rows: 3.213rem 1fr;
         grid-template-areas:
             ". . mobile-controls"
-            ". nav-menu .";
+            ". navigation-menu .";
         min-height: calc(3.213rem + 1438.88px);
     }
 
@@ -34,16 +34,16 @@
         fill: var(--gray);
     }
 
-    .nav-menu {
+    .navigation-menu {
         padding: 0;
-        grid-area: nav-menu;
+        grid-area: navigation-menu;
     }
 
-    .nav-menu-closed {
+    .navigation-menu-closed {
         display: none;
     }
 
-    .nav-list {
+    .navigation-list {
         display: flex;
         flex-direction: column;
         justify-content: center;
