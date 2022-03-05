@@ -2,11 +2,11 @@
 :root {
     --primary-blue: #141526;
     --secondary-blue: #26273b;
-    --white: #ffffff;
+    --tertiary-blue: #212539;
     --light-blue: #1cbfff;
-    --link-blue-hover: #6afff3;
+    --pool-blue: #6afff3;
+    --white: #ffffff;
     --gray: #9193a8;
-    --mobile-navbar: #212539;
 }
 
 @font-face {
@@ -285,7 +285,7 @@ button {
 }
 
 .parameter-title #icon-download {
-    fill: var(--link-blue-hover);
+    fill: var(--pool-blue);
 }
 
 .parameter-title #icon-upload {
@@ -395,7 +395,7 @@ button {
 }
 
 .server-name-city .server-name:hover {
-    color: var(--link-blue-hover);
+    color: var(--pool-blue);
 }
 
 .server-name-city .server-city {
@@ -411,7 +411,7 @@ button {
 }
 
 .server-name-city .server-link:hover {
-    color: var(--link-blue-hover);
+    color: var(--pool-blue);
 }
 
 .connection-type {
@@ -440,7 +440,7 @@ button {
 }
 
 .connections-container .connection-type-link:hover:not(.text-white) {
-    color: var(--link-blue-hover);
+    color: var(--pool-blue);
 }
 
 .connections-container .connection-icon-container {
