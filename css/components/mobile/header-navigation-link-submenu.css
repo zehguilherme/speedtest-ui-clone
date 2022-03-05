@@ -1,6 +1,6 @@
 @media only screen and (max-width: 768px) {
     .sub-menu {
-        background-color: var(--mobile-navbar);
+        background-color: var(--tertiary-blue);
         border-radius: 0;
         display: flex;
         flex-direction: column;
