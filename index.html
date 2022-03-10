@@ -14,15 +14,23 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/components/wrapper.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/components/header-navigation-link.css">
-    <link rel="stylesheet" href="./css/components/header-navigation-link-submenu.css">
+    <link rel="stylesheet" href="./css/components/header-navigation-menu.css">
     <link rel="stylesheet" href="./css/components/header-container.css">
+    <link rel="stylesheet" href="./css/components/header-logo-container.css">
+    <link rel="stylesheet" href="./css/components/header-navigation-menu.css">
+    <link rel="stylesheet" href="./css/components/header-navigation-submenu.css">
+    <link rel="stylesheet" href="./css/components/header-navigation-list-item.css">
+    <link rel="stylesheet" href="./css/components/main-network-test.css">
 
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/components/mobile/header-container.css">
+    <link rel="stylesheet" href="./css/components/mobile/header-logo-container.css">
     <link rel="stylesheet" href="./css/components/mobile/header-navigation-mobile-controls.css">
-    <link rel="stylesheet" href="./css/components/mobile/header-navigation-link.css">
-    <link rel="stylesheet" href="./css/components/mobile/header-navigation-link-submenu.css">
+    <link rel="stylesheet" href="./css/components/mobile/header-navigation-menu.css">
+    <link rel="stylesheet" href="./css/components/mobile/header-navigation-list-item.css">
+    <link rel="stylesheet" href="./css/components/mobile/header-navigation-submenu.css">
+    <link rel="stylesheet" href="./css/components/main-result-icon-container.css">
+    <link rel="stylesheet" href="./css/components/main-results-settings-container.css">
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <title>Speedtest by Ookla - The Global Broadband Speed Test</title>
@@ -31,10 +39,10 @@
 <body>
     <header>
         <div class="wrapper header-container">
-            <h1 class="logo-heading">
-                <a class="logo-link" href="./index.html">
-                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="logo"
-                        title="Speedtest logo" viewBox="0 0 193 24">
+            <h1 class="header-logo-container">
+                <a class="header-logo-link" href="./index.html">
+                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                        class="header-logo" title="Speedtest logo" viewBox="0 0 193 24">
                         <path
                             d="M35.7 19.3l1.9-2.3c1.7 1.5 3.5 2.4 5.8 2.4 2 0 3.2-.9 3.2-2.3V17c0-1.3-.7-2-4.1-2.8-3.9-.9-6.1-2.1-6.1-5.5 0-3.1 2.6-5.3 6.3-5.3 2.7 0 4.8.8 6.7 2.3l-1.7 2.4c-1.6-1.2-3.3-1.9-5-1.9-1.9 0-3 1-3 2.2v.1c0 1.4.8 2.1 4.4 2.9 3.9.9 5.9 2.3 5.9 5.4v.1c0 3.4-2.7 5.5-6.6 5.5-2.9-.2-5.5-1.1-7.7-3.1m23.9-6.1c2.4 0 3.9-1.4 3.9-3.3 0-2.2-1.5-3.3-3.9-3.3h-3.7v6.6h3.7zm-7-9.5h7.2c4.3 0 7 2.4 7 6.1v.1c0 4.1-3.3 6.3-7.3 6.3h-3.6V22h-3.2l-.1-18.3zm17 0h13.6v2.8H72.8v4.8H82v2.9h-9.2v4.9h10.5V22H69.6zm17 0h13.6v2.8H89.8v4.8H99v2.9h-9.2v4.9h10.5V22H86.6zm20.2 2.9v12.5h3.6c3.8 0 6.4-2.6 6.4-6.2v-.1c0-3.6-2.5-6.2-6.4-6.2h-3.6zm-3.2-2.9h6.8c5.8 0 9.7 3.9 9.7 9.1v.1c0 5.2-4 9.2-9.7 9.2h-6.8V3.7zm24.2 2.9H122V3.7h14.9v2.9h-5.8V22h-3.3zm12.5-2.9h13.6v2.8h-10.4v4.8h9.2v2.9h-9.2v4.9H154V22h-13.7zm16.3 15.6l1.9-2.3c1.7 1.5 3.5 2.4 5.8 2.4 2 0 3.2-.9 3.2-2.3V17c0-1.3-.7-2-4.1-2.8-3.9-.9-6.1-2.1-6.1-5.5 0-3.1 2.6-5.3 6.3-5.3 2.7 0 4.8.8 6.7 2.3l-1.7 2.4c-1.6-1.2-3.3-1.9-5-1.9-1.9 0-3 1-3 2.2v.1c0 1.4.8 2.1 4.4 2.9 3.9.9 5.9 2.3 5.9 5.4v.1c0 3.4-2.7 5.5-6.6 5.5-2.9-.2-5.5-1.1-7.7-3.1m22.1-12.7h-5.8V3.7h14.9v2.9H182V22h-3.3zM23 23c2.3-2.3 3.8-5.5 3.8-9.1C26.8 6.8 21 1 13.9 1 6.8 1 1 6.8 1 13.9c0 3.6 1.4 6.8 3.8 9.1l1.8-1.8c-1.9-1.9-3-4.4-3-7.3 0-5.7 4.6-10.3 10.3-10.3 5.7 0 10.3 4.6 10.3 10.3 0 2.8-1.2 5.4-3 7.3L23 23z">
                         </path>
@@ -48,20 +56,23 @@
                 </a>
             </h1>
 
-            <div class="navigation-mobile-controls">
-                <button class="navigation-mobile-toggle" aria-label="Toggle navigation">
+            <div class="header-navigation-mobile-controls">
+                <button class="header-navigation-mobile-toggle" aria-label="Toggle navigation">
                 </button>
             </div>
 
-            <nav class="navigation-menu">
-                <ul class="navigation-list">
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link text-white" href="https://www.speedtest.net/apps">Apps</a>
-                        <ul class="sub-menu">
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/apps/ios">
-                                    <svg title="IOS" class="sub-menu-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <nav class="header-navigation-menu">
+                <ul class="header-navigation-list">
+                    <li class="header-navigation-list-item">
+                        <a class="header-navigation-list-item-link text-white"
+                            href="https://www.speedtest.net/apps">Apps</a>
+                        <ul class="header-navigation-submenu">
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/apps/ios">
+                                    <svg title="IOS" class="header-navigation-submenu-icon"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
                                         <path
                                             d="M7.339 19.816h-5.5c-.463 0-.811-.376-.839-.839V7.137a.84.84 0 0 1 .839-.839h5.5a.84.84 0 0 1 .839.839v11.839a.839.839 0 0 1-.839.84zm-5.5-12.998a.32.32 0 0 0-.318.318v11.839a.32.32 0 0 0 .318.318h5.529a.32.32 0 0 0 .318-.318V7.137a.32.32 0 0 0-.318-.318l-5.529-.001z">
                                         </path>
@@ -74,12 +85,13 @@
                                             d="M10.118 13.65h-.289v-2.374h.289v2.374zm-.144-2.866c-.116 0-.203-.058-.232-.174-.029-.116.058-.203.174-.232h.058c.116 0 .203.058.232.174.029.116-.058.203-.174.232h-.058zm2.113 2.924c-.926 0-1.505-.666-1.505-1.708s.579-1.708 1.505-1.708 1.505.666 1.505 1.708-.579 1.708-1.505 1.708zm3.039 0c-.695 0-1.187-.376-1.216-.955h.318c.029.405.405.666.926.666s.839-.261.839-.637c0-.318-.203-.492-.695-.608l-.405-.116c-.608-.145-.897-.405-.897-.839 0-.521.492-.926 1.129-.926s1.129.376 1.129.897h-.318c-.029-.376-.347-.637-.839-.637s-.782.289-.782.637c0 .289.203.463.695.579l.347.087c.666.174.955.434.955.868.001.608-.462.984-1.186.984zm-3.039-3.126c-.724 0-1.187.55-1.187 1.418s.463 1.418 1.187 1.418 1.187-.55 1.187-1.418-.463-1.418-1.187-1.418z">
                                         </path>
                                     </svg>
-                                    <span class="sub-menu-text">iOS</span>
+                                    <span class="header-navigation-submenu-text">iOS</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/apps/android">
-                                    <svg title="Android" class="sub-menu-icon"
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/apps/android">
+                                    <svg title="Android" class="header-navigation-submenu-icon"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24">
                                         <g transform="translate(-13 -12)">
@@ -124,13 +136,15 @@
                                             </path>
                                         </g>
                                     </svg>
-                                    <span class="sub-menu-text">Android</span>
+                                    <span class="header-navigation-submenu-text">Android</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/apps/mac">
-                                    <svg title="MacOS" class="sub-menu-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/apps/mac">
+                                    <svg title="MacOS" class="header-navigation-submenu-icon"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
                                         <path
                                             d="M12.023 8.677c-1.404 0-2.574 1.147-2.574 2.551s1.147 2.574 2.551 2.574 2.574-1.147 2.574-2.551c0-1.404-1.146-2.551-2.551-2.574zm1.241 4.119h-.304l-.936-1.334-.936 1.334h-.304l1.1-1.545-1.1-1.545h.304l.936 1.334.936-1.334h.304l-1.1 1.545 1.1 1.545z">
                                         </path>
@@ -138,12 +152,13 @@
                                             d="M19.817 17.383H4.206a.79.79 0 0 1-.796-.796V5.891a.79.79 0 0 1 .796-.796h15.611a.79.79 0 0 1 .796.796v10.696a.79.79 0 0 1-.796.796zM4.206 5.494a.394.394 0 0 0-.398.398v10.696a.41.41 0 0 0 .398.398h15.611a.41.41 0 0 0 .398-.398V5.891a.41.41 0 0 0-.398-.398l-15.611.001zm18.607 13.41H1.187c-.117 0-.187-.117-.187-.21 0-.094.094-.164.187-.187h21.626a.226.226 0 0 1 .187.233c-.023.094-.094.164-.187.164z">
                                         </path>
                                     </svg>
-                                    <span class="sub-menu-text">Mac</span>
+                                    <span class="header-navigation-submenu-text">Mac</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/apps/windows">
-                                    <svg title="Windows" class="sub-menu-icon"
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/apps/windows">
+                                    <svg title="Windows" class="header-navigation-submenu-icon"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24">
                                         <path
@@ -153,12 +168,13 @@
                                             d="M19.817 17.383H4.206a.79.79 0 0 1-.796-.796V5.891a.79.79 0 0 1 .796-.796h15.611a.79.79 0 0 1 .796.796v10.696a.79.79 0 0 1-.796.796zM4.206 5.494a.394.394 0 0 0-.398.398v10.696a.41.41 0 0 0 .398.398h15.611a.41.41 0 0 0 .398-.398V5.891a.41.41 0 0 0-.398-.398l-15.611.001zm18.607 13.41H1.187c-.117 0-.187-.117-.187-.21 0-.094.094-.164.187-.187h21.626a.226.226 0 0 1 .187.233c-.023.094-.094.164-.187.164z">
                                         </path>
                                     </svg>
-                                    <span class="sub-menu-text">Windows</span>
+                                    <span class="header-navigation-submenu-text">Windows</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/apps/chrome">
-                                    <svg title="Google Chrome" class="sub-menu-icon"
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/apps/chrome">
+                                    <svg title="Google Chrome" class="header-navigation-submenu-icon"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24">
                                         <path
@@ -174,12 +190,13 @@
                                             d="M11.984 13.89c-.652 0-1.271-.359-1.564-.913L8.855 10.24c-1.01 1.727-.424 3.976 1.336 4.954.359.228.782.359 1.206.424l1.043-1.825a1.281 1.281 0 0 1-.456.097zm0-3.617h3.161c-1.01-1.727-3.227-2.347-4.954-1.336-.358.227-.717.488-.978.814l1.043 1.825a1.717 1.717 0 0 1 1.728-1.303zm3.422.554h-2.119c.326.326.521.782.489 1.271 0 .326-.098.619-.228.913l-1.564 2.705c2.021 0 3.618-1.63 3.618-3.65a3.976 3.976 0 0 0-.196-1.239z">
                                         </path>
                                     </svg>
-                                    <span class="sub-menu-text">Chrome</span>
+                                    <span class="header-navigation-submenu-text">Chrome</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/apps/appletv">
-                                    <svg title="Apple TV" class="sub-menu-icon"
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/apps/appletv">
+                                    <svg title="Apple TV" class="header-navigation-submenu-icon"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24">
                                         <path
@@ -189,13 +206,15 @@
                                             d="M22.34 4.663H1.637A.636.636 0 0 0 1 5.3v11.148c0 .341.273.637.637.637h10.192v1.888H8.758c-.091 0-.182.068-.182.182s.068.182.182.182h6.484c.091 0 .182-.068.182-.182s-.068-.182-.182-.182h-3.071v-1.888h10.192a.636.636 0 0 0 .637-.637V5.3c-.046-.364-.319-.637-.66-.637zm.296 11.762a.277.277 0 0 1-.273.273H1.66a.277.277 0 0 1-.273-.273V5.277c0-.159.137-.273.273-.273h20.703c.159 0 .273.137.273.273v11.148z">
                                         </path>
                                     </svg>
-                                    <span class="sub-menu-text">Apple TV</span>
+                                    <span class="header-navigation-submenu-text">Apple TV</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/apps/cli">
-                                    <svg title="CLI" class="sub-menu-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/apps/cli">
+                                    <svg title="CLI" class="header-navigation-submenu-icon"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
                                         <g transform="translate(-16 -12)" id="Symbols">
                                             <g id="icon-cli-copy" transform="translate(16 12)">
                                                 <path id="Shape"
@@ -214,13 +233,15 @@
                                             </g>
                                         </g>
                                     </svg>
-                                    <span class="sub-menu-text">CLI</span>
+                                    <span class="header-navigation-submenu-text">CLI</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/apps/vpn">
-                                    <svg title="VPN" class="sub-menu-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/apps/vpn">
+                                    <svg title="VPN" class="header-navigation-submenu-icon"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
                                         <path
                                             d="M16.7 22.3H6.4c-.3 0-.5-.1-.5-.4v-20c0-.3.2-.6.5-.6h10.2c.4 0 .5.2.5.6v20c0 .2-.1.4-.4.4zm0-21.5H6.4c-.6 0-1 .5-1 1v20c0 .7.3 1 1 1h10.4c.5 0 .8-.3.8-.9V1.8c0-.6-.3-1-.9-1z">
                                         </path>
@@ -228,128 +249,148 @@
                                             d="M12.5 20.1h-1.9c-.2 0-.3.1-.3.3 0 .2.1.3.3.3h1.9c.2 0 .3-.1.3-.3s-.1-.3-.3-.3M10.3 9.2c0-.7.6-1.3 1.3-1.3s1.3.6 1.3 1.3v1.5h-2.6V9.2zm3.3 1.4h-.1V9.2c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.5h-.2c-.5 0-.9.4-.9.9V14c0 .6.4 1 .9 1h4.1c.5 0 .9-.4.9-.9v-2.5c0-.6-.4-1-.9-1z">
                                         </path>
                                     </svg>
-                                    <span class="sub-menu-text">VPN</span>
+                                    <span class="header-navigation-submenu-text">VPN</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link text-white"
+                    <li class="header-navigation-list-item">
+                        <a class="header-navigation-list-item-link text-white"
                             href="https://www.speedtest.net/insights">Insights</a>
-                        <ul class="sub-menu">
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/insights/blog/">
-                                    <span class="sub-menu-text">Blog</span>
+                        <ul class="header-navigation-submenu">
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/insights/blog/">
+                                    <span class="header-navigation-submenu-text">Blog</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/global-index">
-                                    <span class="sub-menu-text">Global Index</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/global-index">
+                                    <span class="header-navigation-submenu-text">Global Index</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/ookla-5g-map">
-                                    <span class="sub-menu-text">Ookla 5G Map</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/ookla-5g-map">
+                                    <span class="header-navigation-submenu-text">Ookla 5G Map</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link text-white"
+                    <li class="header-navigation-list-item">
+                        <a class="header-navigation-list-item-link text-white"
                             href="https://www.speedtest.net/speedtest-servers">Network</a>
                     </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link text-white"
+                    <li class="header-navigation-list-item">
+                        <a class="header-navigation-list-item-link text-white"
                             href="https://www.speedtest.net/apps/cli">Developers</a>
                     </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link text-white"
+                    <li class="header-navigation-list-item">
+                        <a class="header-navigation-list-item-link text-white"
                             href="https://www.ookla.com/enterprise">Enterprise</a>
-                        <ul class="sub-menu sub-menu-enterprise">
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/speedtest-intelligence">
-                                    <span class="sub-menu-text">Speedtest Intelligence</span>
+                        <ul class="header-navigation-submenu header-navigation-submenu-enterprise">
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/speedtest-intelligence">
+                                    <span class="header-navigation-submenu-text">Speedtest Intelligence</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/cell-analytics">
-                                    <span class="sub-menu-text">Cell Analytics</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/cell-analytics">
+                                    <span class="header-navigation-submenu-text">Cell Analytics</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/spatialbuzz">
-                                    <span class="sub-menu-text">SpatialBuzz</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/spatialbuzz">
+                                    <span class="header-navigation-submenu-text">SpatialBuzz</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/speedtest-powered">
-                                    <span class="sub-menu-text">Speedtest Powered</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/speedtest-powered">
+                                    <span class="header-navigation-submenu-text">Speedtest Powered</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/gis-solutions">
-                                    <span class="sub-menu-text">GIS Solutions</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/gis-solutions">
+                                    <span class="header-navigation-submenu-text">GIS Solutions</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/speedtest-custom">
-                                    <span class="sub-menu-text">Speedtest Custom</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/speedtest-custom">
+                                    <span class="header-navigation-submenu-text">Speedtest Custom</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/cellmaps">
-                                    <span class="sub-menu-text">CellMaps</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/cellmaps">
+                                    <span class="header-navigation-submenu-text">CellMaps</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/towersource">
-                                    <span class="sub-menu-text">TowerSource</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/towersource">
+                                    <span class="header-navigation-submenu-text">TowerSource</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/mapelements">
-                                    <span class="sub-menu-text">MapELEMENTS</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/mapelements">
+                                    <span class="header-navigation-submenu-text">MapELEMENTS</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.ookla.com/partnerships">
-                                    <span class="sub-menu-text">Partners & Programs</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.ookla.com/partnerships">
+                                    <span class="header-navigation-submenu-text">Partners & Programs</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://downdetector.com/enterprise/">
-                                    <span class="sub-menu-text">Downdetector Enterprise</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link text-white" href="https://www.speedtest.net/about">About</a>
-                        <ul class="sub-menu">
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/about/press">
-                                    <span class="sub-menu-text">Press</span>
-                                </a>
-                            </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/about/knowledge">
-                                    <span class="sub-menu-text">Knowledge Base</span>
-                                </a>
-                            </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/about/advertising">
-                                    <span class="sub-menu-text">Advertise</span>
-                                </a>
-                            </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/about/careers">
-                                    <span class="sub-menu-text">Careers</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://downdetector.com/enterprise/">
+                                    <span class="header-navigation-submenu-text">Downdetector
+                                        Enterprise</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="navigation-list-item">
-                        <a class="navigation-list-item-link text-white" href="https://www.speedtest.net/login">
+                    <li class="header-navigation-list-item">
+                        <a class="header-navigation-list-item-link text-white"
+                            href="https://www.speedtest.net/about">About</a>
+                        <ul class="header-navigation-submenu">
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/about/press">
+                                    <span class="header-navigation-submenu-text">Press</span>
+                                </a>
+                            </li>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/about/knowledge">
+                                    <span class="header-navigation-submenu-text">Knowledge Base</span>
+                                </a>
+                            </li>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/about/advertising">
+                                    <span class="header-navigation-submenu-text">Advertise</span>
+                                </a>
+                            </li>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/about/careers">
+                                    <span class="header-navigation-submenu-text">Careers</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header-navigation-list-item">
+                        <a class="header-navigation-list-item-link text-white" href="https://www.speedtest.net/login">
                             <svg title="User icon" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xmlns="http://www.w3.org/2000/svg" class="user-icon">
                                 <defs>
@@ -363,25 +404,29 @@
                             </svg>
                             Log In
                         </a>
-                        <ul class="sub-menu">
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/results">
-                                    <span class="sub-menu-text">Results History</span>
+                        <ul class="header-navigation-submenu">
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/results">
+                                    <span class="header-navigation-submenu-text">Results History</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/settings">
-                                    <span class="sub-menu-text">Settings</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/settings">
+                                    <span class="header-navigation-submenu-text">Settings</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/help">
-                                    <span class="sub-menu-text">Help</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/help">
+                                    <span class="header-navigation-submenu-text">Help</span>
                                 </a>
                             </li>
-                            <li class="sub-menu-list-item">
-                                <a class="sub-menu-list-item-link" href="https://www.speedtest.net/register">
-                                    <span class="sub-menu-text">Create Account</span>
+                            <li class="header-navigation-submenu-list-item">
+                                <a class="header-navigation-submenu-list-item-link"
+                                    href="https://www.speedtest.net/register">
+                                    <span class="header-navigation-submenu-text">Create Account</span>
                                 </a>
                             </li>
                         </ul>

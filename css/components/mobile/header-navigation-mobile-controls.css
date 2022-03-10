@@ -1,11 +1,11 @@
 @media only screen and (max-width: 768px) {
-    .navigation-mobile-controls {
+    .header-navigation-mobile-controls {
         display: block;
         margin-left: auto;
         grid-area: mobile-controls;
     }
 
-    .navigation-mobile-toggle {
+    .header-navigation-mobile-toggle {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -19,8 +19,8 @@
         transition: all 0.5s ease-in-out;
     }
 
-    .navigation-mobile-toggle::before,
-    .navigation-mobile-toggle::after {
+    .header-navigation-mobile-toggle::before,
+    .header-navigation-mobile-toggle::after {
         content: "";
         position: absolute;
         width: 22px;
@@ -31,26 +31,28 @@
         transition: all 0.5s ease-in-out;
     }
 
-    .navigation-mobile-toggle::before {
+    .header-navigation-mobile-toggle::before {
         transform: translateY(-6px);
     }
 
-    .navigation-mobile-toggle::after {
+    .header-navigation-mobile-toggle::after {
         transform: translateY(6px);
     }
 
     /* Animation */
-    .navigation-mobile-controls.open .navigation-mobile-toggle {
+    .header-navigation-mobile-controls.open .header-navigation-mobile-toggle {
         transform: translateX(-50px);
         background: transparent;
         box-shadow: none;
     }
 
-    .navigation-mobile-controls.open .navigation-mobile-toggle::before {
+    .header-navigation-mobile-controls.open
+        .header-navigation-mobile-toggle::before {
         transform: rotate(45deg) translate(35px, -35px);
     }
 
-    .navigation-mobile-controls.open .navigation-mobile-toggle::after {
+    .header-navigation-mobile-controls.open
+        .header-navigation-mobile-toggle::after {
         transform: rotate(-45deg) translate(35px, 35px);
     }
 }

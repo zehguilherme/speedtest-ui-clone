@@ -1,5 +1,5 @@
 @media only screen and (max-width: 768px) {
-    .sub-menu {
+    .header-navigation-submenu {
         background-color: var(--tertiary-blue);
         border-radius: 0;
         display: flex;
@@ -10,7 +10,7 @@
         padding: 0;
     }
 
-    .sub-menu::before {
+    .header-navigation-submenu::before {
         content: none;
     }
 }
