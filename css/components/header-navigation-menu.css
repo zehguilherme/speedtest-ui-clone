@@ -1,0 +1,8 @@
+.header-navigation-menu {
+    padding-right: 1.25rem;
+}
+
+.header-navigation-list {
+    display: flex;
+    align-items: center;
+}

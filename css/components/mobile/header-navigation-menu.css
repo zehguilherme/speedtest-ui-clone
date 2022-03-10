@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px) {
+    .header-navigation-menu {
+        padding: 0;
+        grid-area: header-navigation-menu;
+    }
+
+    .header-navigation-menu-closed {
+        display: none;
+    }
+
+    .header-navigation-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

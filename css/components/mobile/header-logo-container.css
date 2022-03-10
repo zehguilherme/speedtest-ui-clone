@@ -1,0 +1,16 @@
+@media only screen and (max-width: 768px) {
+    .header-logo-container {
+        padding: 0;
+        grid-area: logo;
+    }
+
+    .header-logo-container-disabled {
+        display: none;
+    }
+
+    .header-logo {
+        width: 7.754rem;
+        height: 0.964rem;
+        fill: var(--gray);
+    }
+}

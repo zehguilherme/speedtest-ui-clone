@@ -6,28 +6,6 @@
     background-color: var(--primary-blue);
 }
 
-.logo-heading {
-    padding-left: 1.25rem;
-}
-
-.logo-link:hover :first-child {
-    fill: var(--light-blue);
-}
-
-.logo {
-    width: 9.047rem;
-    fill: var(--white);
-}
-
-.navigation-mobile-controls {
+.header-navigation-mobile-controls {
     display: none;
-}
-
-.navigation-menu {
-    padding-right: 1.25rem;
-}
-
-.navigation-list {
-    display: flex;
-    align-items: center;
 }

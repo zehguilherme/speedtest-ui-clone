@@ -1,4 +1,4 @@
-.sub-menu {
+.header-navigation-submenu {
     position: absolute;
     z-index: 2;
     background-color: var(--secondary-blue);
@@ -13,7 +13,7 @@
     display: none;
 }
 
-.sub-menu::before {
+.header-navigation-submenu::before {
     content: "";
     position: absolute;
     display: block;
@@ -28,44 +28,46 @@
     transform: translateX(-50%);
 }
 
-.navigation-list-item:hover .sub-menu {
+.header-navigation-list-item:hover .header-navigation-submenu {
     display: block;
 }
 
-.sub-menu-enterprise {
+.header-navigation-submenu-enterprise {
     width: 15.755rem;
 }
 
-.sub-menu-list-item {
+.header-navigation-submenu-list-item {
     display: flex;
     align-items: center;
     height: 2.563rem;
 }
 
-.sub-menu-list-item-link {
+.header-navigation-submenu-list-item-link {
     display: flex;
     align-items: center;
     padding-right: 1.5rem;
     padding-left: 1rem;
 }
 
-.sub-menu-list-item-link .sub-menu-icon {
+.header-navigation-submenu-list-item-link .header-navigation-submenu-icon {
     margin-right: 0.5rem;
     width: 36px;
 }
 
-.sub-menu-list-item-link .sub-menu-icon {
+.header-navigation-submenu-list-item-link .header-navigation-submenu-icon {
     fill: var(--light-blue);
 }
 
-.sub-menu-list-item-link:hover .sub-menu-icon {
+.header-navigation-submenu-list-item-link:hover
+    .header-navigation-submenu-icon {
     fill: var(--white);
 }
 
-.sub-menu-list-item-link .sub-menu-text {
+.header-navigation-submenu-list-item-link .header-navigation-submenu-text {
     color: var(--light-blue);
 }
 
-.sub-menu-list-item-link:hover .sub-menu-text {
+.header-navigation-submenu-list-item-link:hover
+    .header-navigation-submenu-text {
     color: var(--white);
 }

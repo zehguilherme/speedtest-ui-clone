@@ -15,38 +15,7 @@
         grid-template-rows: 3.213rem 1fr;
         grid-template-areas:
             ". . mobile-controls"
-            ". navigation-menu .";
+            ". header-navigation-menu .";
         min-height: calc(3.213rem + 1438.88px);
-    }
-
-    .logo-heading {
-        padding: 0;
-        grid-area: logo;
-    }
-
-    .logo-heading-disabled {
-        display: none;
-    }
-
-    #logo {
-        width: 7.754rem;
-        height: 0.964rem;
-        fill: var(--gray);
-    }
-
-    .navigation-menu {
-        padding: 0;
-        grid-area: navigation-menu;
-    }
-
-    .navigation-menu-closed {
-        display: none;
-    }
-
-    .navigation-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
