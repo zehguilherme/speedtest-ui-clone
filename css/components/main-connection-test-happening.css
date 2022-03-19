@@ -1,0 +1,94 @@
+.main-connection-test-happening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-connection-test-happening .network-speedometer {
+    margin-top: 1.25rem;
+    margin-bottom: 2.313rem;
+    width: 100%;
+    height: auto;
+    max-width: 21.25rem;
+}
+
+.network-speedometer.disabled {
+    display: none;
+}
+
+.main-connection-test-happening .connection-parameters {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5.681rem;
+    justify-content: center;
+}
+
+.connection-parameters.disabled {
+    display: none;
+}
+
+.connection-parameters .parameter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parameter .parameter-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parameter-title .parameter-icon {
+    width: 0.928rem;
+    height: 0.928rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+}
+
+.parameter-title #icon-ping {
+    fill: var(--white);
+}
+
+.parameter-title #icon-download {
+    fill: var(--pool-blue);
+}
+
+.parameter-title #icon-upload {
+    fill: #bf71ff;
+}
+
+.parameter-title .parameter-name {
+    margin-right: 0.3rem;
+    margin-left: 0.4rem;
+}
+
+.parameter-title .parameter-name,
+.parameter-title .parameter-unit {
+    font-size: 0.813rem;
+    line-height: 1.375rem;
+    font-weight: 500;
+}
+
+.parameter-title .parameter-unit {
+    color: var(--gray);
+}
+
+.parameter .parameter-value {
+    font-family: "Gauge Mono Regular", "HCo Gotham SSm", "Times", sans-serif;
+    font-size: 2.875rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+}
+
+#download-upload-line-graphic {
+    width: 100%;
+}
+
+#download-upload-line-graphic.disabled {
+    display: none;
+}

@@ -1,0 +1,10 @@
+.main-network-test {
+    display: grid;
+    grid-template-columns: 1fr 47.5rem 1fr;
+    grid-template-areas:
+        ". header ."
+        ". main ."
+        ". footer. ";
+    padding: 1.25rem 0;
+    background-color: var(--primary-blue);
+}

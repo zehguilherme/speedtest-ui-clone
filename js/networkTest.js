@@ -71,10 +71,10 @@ export function changeConnectionType () {
 }
 
 export function executeConnectionTest () {
-    const connectionTestButton = document.querySelector('.connection-test-button-container')
-    const resultsSettingsContainer = document.querySelector('.results-settings-container')
+    const connectionTestButton = document.querySelector('.main-connection-test-button-container')
+    const resultsSettingsContainer = document.querySelector('.main-results-settings-container')
     const connectionParametersContainer = document.querySelector('.connection-parameters')
-    const connectionTypeContainer = document.querySelector('.connection-type')
+    const connectionTypeContainer = document.querySelector('.main-connection-type')
     const downloadUploadgraphic = document.querySelector('#download-upload-line-graphic')
     const networkSpeedometer = document.querySelector('.network-speedometer')
 
@@ -94,7 +94,7 @@ export function executeConnectionTest () {
 }
 
 function changeConnectionTestButtonColor () {
-    const connectionTestButton = document.querySelector('.connection-test-button-container')
+    const connectionTestButton = document.querySelector('.main-connection-test-button-container')
 
     if (isMultiConnection) {
         connectionTestButton.classList.add('multi-connection')

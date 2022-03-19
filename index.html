@@ -21,16 +21,25 @@
     <link rel="stylesheet" href="./css/components/header-navigation-submenu.css">
     <link rel="stylesheet" href="./css/components/header-navigation-list-item.css">
     <link rel="stylesheet" href="./css/components/main-network-test.css">
+    <link rel="stylesheet" href="./css/components/main-result-icon-container.css">
+    <link rel="stylesheet" href="./css/components/main-results-settings-container.css">
+    <link rel="stylesheet" href="./css/components/main-result.css">
+    <link rel="stylesheet" href="./css/components/main-results-settings-list.css">
+    <link rel="stylesheet" href="./css/components/main-results-settings-list-item.css">
+    <link rel="stylesheet" href="./css/components/main-connection-test-button-container.css">
+    <link rel="stylesheet" href="./css/components/main-connection-test-happening.css">
+    <link rel="stylesheet" href="./css/components/main-connection-information.css">
+    <link rel="stylesheet" href="./css/components/main-connection-type.css">
 
-    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/components/mobile/header-container.css">
     <link rel="stylesheet" href="./css/components/mobile/header-logo-container.css">
     <link rel="stylesheet" href="./css/components/mobile/header-navigation-mobile-controls.css">
     <link rel="stylesheet" href="./css/components/mobile/header-navigation-menu.css">
     <link rel="stylesheet" href="./css/components/mobile/header-navigation-list-item.css">
     <link rel="stylesheet" href="./css/components/mobile/header-navigation-submenu.css">
-    <link rel="stylesheet" href="./css/components/main-result-icon-container.css">
-    <link rel="stylesheet" href="./css/components/main-results-settings-container.css">
+    <link rel="stylesheet" href="./css/components/mobile/main-network-test.css">
+    <link rel="stylesheet" href="./css/components/mobile/main-connection-test-happening.css">
+    <link rel="stylesheet" href="./css/components/mobile/main-connection-information.css">
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <title>Speedtest by Ookla - The Global Broadband Speed Test</title>
@@ -438,11 +447,12 @@
 
     <main>
         <div class="wrapper">
-            <section class="network-test">
-                <header class="results-settings-container">
-                    <ul class="header-list">
-                        <li class="header-list-item">
-                            <a href="https://www.speedtest.net/results" class="text-uppercase header-list-item-link">
+            <section class="main-network-test">
+                <header class="main-results-settings-container">
+                    <ul class="main-results-settings-list">
+                        <li class="main-results-settings-list-item">
+                            <a href="https://www.speedtest.net/results"
+                                class="text-uppercase main-results-settings-list-item-link">
                                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" title="Check icon"
                                     xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-larger icon"
                                     id="check-icon">
@@ -458,11 +468,12 @@
                                     </defs>
                                     <use xlink:href="#ic_checkcircle"></use>
                                 </svg>
-                                <span class="header-list-item-text text-white">Results</span>
+                                <span class="main-results-settings-list-item-text text-white">Results</span>
                             </a>
                         </li>
-                        <li class="header-list-item">
-                            <a href="https://www.speedtest.net/settings" class="text-uppercase header-list-item-link">
+                        <li class="main-results-settings-list-item">
+                            <a href="https://www.speedtest.net/settings"
+                                class="text-uppercase main-results-settings-list-item-link">
                                 <svg xmlns:xlink="http://www.w3.org/1999/xlink" title="Settings icon"
                                     xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon-larger icon"
                                     id="settings-icon">
@@ -478,21 +489,21 @@
                                     </defs>
                                     <use xlink:href="#ic_settingsalt"></use>
                                 </svg>
-                                <span class="header-list-item-text text-white">Settings</span>
+                                <span class="main-results-settings-list-item-text text-white">Settings</span>
                             </a>
                         </li>
                     </ul>
                 </header>
 
-                <main class="result">
-                    <div class="connection-test-button-container">
+                <main class="main-result">
+                    <div class="main-connection-test-button-container">
                         <div class="ring"></div>
                         <h2>
                             <a href="#" class="connection-test-button-link text-white text-uppercase">Go</a>
                         </h2>
                     </div>
 
-                    <div class="connection-test-happening">
+                    <div class="main-connection-test-happening">
                         <div class="connection-parameters disabled">
                             <div class="parameter">
                                 <div class="parameter-title">
@@ -563,16 +574,16 @@
                         <img class="network-speedometer disabled" src="./img/speedometer.png" alt="Speedometer">
                     </div>
 
-                    <div class="connection-information">
+                    <div class="main-connection-information">
                         <div class="connection-company">
                             <div class="company-name-connection-ip-container">
                                 <span class="company-name text-white">Company</span>
                                 <span class="connection-ip text-gray">000.00.000.000</span>
                             </div>
 
-                            <div class="result-icon-container user-icon-container">
+                            <div class="main-result-icon-container user-icon-container">
                                 <svg title="User icon" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xmlns="http://www.w3.org/2000/svg" class="svg-icon result-icon user-icon">
+                                    xmlns="http://www.w3.org/2000/svg" class="svg-icon main-result-icon user-icon">
                                     <defs>
                                         <symbol id="ic_account-line" viewBox="0 0 24 24">
                                             <path
@@ -587,10 +598,10 @@
 
                         <div class="server-information">
                             <div class="server-container">
-                                <div class="result-icon-container globe-icon-container">
+                                <div class="main-result-icon-container globe-icon-container">
                                     <svg title="Globe icon" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         xmlns="http://www.w3.org/2000/svg"
-                                        class="svg-icon svg-icon-ms svg-icon-ring result-icon globe-icon">
+                                        class="svg-icon svg-icon-ms svg-icon-ring main-result-icon globe-icon">
                                         <defs>
                                             <symbol id="icon-internet" viewBox="0 0 24 24">
                                                 <path
@@ -612,16 +623,16 @@
                     </div>
                 </main>
 
-                <footer class="connection-type">
+                <footer class="main-connection-type">
                     <span class="connections-text">Connections</span>
 
                     <div class="connections-container">
                         <a href="#" class="connection-type-link text-white" id="multi-connection">Multi</a>
 
-                        <div class="result-icon-container connection-icon-container">
+                        <div class="main-result-icon-container connection-icon-container">
                             <svg title="Multi connection icon" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="svg-icon svg-icon-ms svg-icon-ring active result-icon connection-icon"
+                                class="svg-icon svg-icon-ms svg-icon-ring active main-result-icon connection-icon"
                                 data-mode="multi">
                                 <defs>
                                     <symbol id="ic_multi" viewBox="0 0 24 24">
@@ -659,7 +670,7 @@
 
                             <svg title="Single connection icon" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="svg-icon svg-icon-sm svg-icon-ring result-icon connection-icon">
+                                class="svg-icon svg-icon-sm svg-icon-ring main-result-icon connection-icon">
                                 <defs>
                                     <symbol id="ic_single" viewBox="0 0 24 24">
                                         <path

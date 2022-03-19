@@ -1,0 +1,7 @@
+.main-results-settings-container {
+    grid-area: header;
+}
+
+.main-results-settings-container.disabled {
+    display: none;
+}
