@@ -1,0 +1,90 @@
+.main-connection-information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.connection-company {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1.25rem;
+    width: 100%;
+}
+
+.connection-company .company-name-connection-ip-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.company-name-connection-ip-container .company-name {
+    font-size: 1.063rem;
+    font-weight: 400;
+    line-height: 1.688rem;
+}
+
+.company-name-connection-ip-container .connection-ip {
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.connection-company .user-icon-container {
+    margin-left: 0.557rem;
+}
+
+.server-information {
+    margin-left: 1.25rem;
+    width: 100%;
+}
+
+.server-information .server-container {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    grid-template-rows: 3.188rem 1fr;
+    grid-template-areas:
+        "globe-icon-container server-name-city"
+        ". server-name-city";
+    align-items: center;
+}
+
+.server-container .globe-icon-container {
+    grid-area: globe-icon-container;
+    margin-right: 0.557rem;
+}
+
+.server-container .server-name-city {
+    grid-area: server-name-city;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.server-name-city .server-name {
+    font-size: 1.063rem;
+    font-weight: 400;
+    line-height: 1.688rem;
+}
+
+.server-name-city .server-name:hover {
+    color: var(--pool-blue);
+}
+
+.server-name-city .server-city {
+    font-size: 0.983rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.server-name-city .server-link {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--light-blue);
+}
+
+.server-name-city .server-link:hover {
+    color: var(--pool-blue);
+}

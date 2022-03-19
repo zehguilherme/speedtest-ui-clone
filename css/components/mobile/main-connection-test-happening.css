@@ -1,0 +1,6 @@
+@media only screen and (max-width: 768px) {
+    .main-connection-test-happening .connection-parameters {
+        flex-direction: column;
+        gap: 1.651rem;
+    }
+}

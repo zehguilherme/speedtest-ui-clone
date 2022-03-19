@@ -1,0 +1,45 @@
+.main-connection-type {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-connection-type.disabled {
+    display: none;
+}
+
+.main-connection-type .connections-text {
+    color: var(--gray);
+    font-size: 0.813rem;
+    line-height: 1.313rem;
+    margin-bottom: 0.25rem;
+}
+
+.main-connection-type .connections-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.connections-container .connection-type-link:hover:not(.text-white) {
+    color: var(--pool-blue);
+}
+
+.connections-container .connection-icon-container {
+    margin: 0 0.813rem;
+    cursor: pointer;
+}
+
+.connections-container .connection-icon-container:hover {
+    border-color: var(--white);
+}
+
+.connection-icon-container:hover .connection-icon {
+    fill: var(--white);
+}
+
+.connection-icon-container .connection-icon:not(.active) {
+    display: none;
+}

@@ -1,0 +1,16 @@
+.main-result-icon-container {
+    border: 1px solid rgba(145, 147, 168, 0.5);
+    border-radius: 100%;
+    padding: 0.4rem;
+    width: 37.09px;
+    height: 37.09px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-result-icon-container .main-result-icon {
+    width: 1.188rem;
+    height: 1.188rem;
+    fill: var(--gray);
+}

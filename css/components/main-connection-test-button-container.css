@@ -1,0 +1,66 @@
+.main-connection-test-button-container {
+    position: relative;
+    margin: 68px 0 43px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    min-width: 11.25rem;
+    height: 11.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main-connection-test-button-container.disabled {
+    display: none;
+}
+
+.main-connection-test-button-container:hover {
+    background-color: #151e2f;
+}
+
+.main-connection-test-button-container .connection-test-button-link {
+    font-size: 2.5rem;
+    line-height: 11.375rem;
+    font-weight: 500;
+}
+
+.main-connection-test-button-container:hover .ring {
+    animation: none;
+}
+
+.main-connection-test-button-container .ring {
+    position: absolute;
+    border: 2px #26c5dd solid;
+    border-radius: 100%;
+    min-width: 11.25rem;
+    height: 11.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: button-wave;
+    animation-delay: 3.5s;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+
+@keyframes button-wave {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    12.5% {
+        opacity: 0;
+        transform: scale(0.995);
+    }
+    16.667% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        transform: scale(1.3);
+    }
+}

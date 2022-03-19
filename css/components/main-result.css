@@ -1,0 +1,7 @@
+.main-result {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.938rem;
+}

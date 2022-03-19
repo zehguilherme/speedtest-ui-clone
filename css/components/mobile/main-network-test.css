@@ -1,0 +1,7 @@
+.main-network-test {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
