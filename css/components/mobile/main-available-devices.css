@@ -1,0 +1,15 @@
+@media only screen and (max-width: 768px) {
+    .device-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "device-link device-link"
+            "device-link device-link"
+            "device-link device-link"
+            "device-link device-link"
+            "device-link device-link";
+    }
+
+    .device-image {
+        margin: 0;
+    }
+}
