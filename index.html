@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="./css/components/main-connection-test-happening.css">
     <link rel="stylesheet" href="./css/components/main-connection-information.css">
     <link rel="stylesheet" href="./css/components/main-connection-type.css">
+    <link rel="stylesheet" href="./css/components/main-available-devices.css">
 
     <link rel="stylesheet" href="./css/components/mobile/header-container.css">
     <link rel="stylesheet" href="./css/components/mobile/header-logo-container.css">
@@ -40,6 +41,7 @@
     <link rel="stylesheet" href="./css/components/mobile/main-network-test.css">
     <link rel="stylesheet" href="./css/components/mobile/main-connection-test-happening.css">
     <link rel="stylesheet" href="./css/components/mobile/main-connection-information.css">
+    <link rel="stylesheet" href="./css/components/mobile/main-available-devices.css">
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <title>Speedtest by Ookla - The Global Broadband Speed Test</title>
@@ -693,51 +695,170 @@
                 </footer>
             </section>
 
-            <section class="available-devices">
-                <p class="description">Use Speedtest® on all your devices with our free native apps. Download Speedtest
-                    apps
-                    for:</p>
+            <section class="main-available-devices">
+                <div class="description-container">
+                    <p class="description text-white">Use Speedtest® on all your devices with our free native apps.</p>
+                    <p class="description text-white">Download Speedtest apps for:</p>
+                </div>
 
                 <ul class="device-list">
                     <li class="device">
-                        <a href="https://www.speedtest.net/apps/android">
-                            <img class="device-image" src="./img/android.svg" alt="Android">
+                        <a class="device-link" href="https://www.speedtest.net/apps/android">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                title="Android device" class="device-image" id="ic_android" viewBox="0 0 24 24"
+                                width="24" height="24">
+                                <g transform="translate(-13 -12)">
+                                    <g transform="translate(13 12)">
+                                        <path
+                                            d="M7.334 19.816H1.817A.828.828 0 0 1 1 18.999V7.147c0-.476.374-.817.817-.817h5.517c.477 0 .817.374.817.817v11.851c.035.443-.34.818-.817.818zM1.817 6.807a.342.342 0 0 0-.341.341v11.851c0 .102.034.17.102.238a.309.309 0 0 0 .238.102h5.517c.17 0 .306-.136.306-.341V7.147a.342.342 0 0 0-.341-.341H1.817z">
+                                        </path>
+                                        <circle cx="4.576" cy="17.705" r=".579"></circle>
+                                        <circle cx="20.889" cy="12.051" r=".579"></circle>
+                                        <path
+                                            d="M22.183 19.816H9.071a.232.232 0 0 1-.238-.238c0-.136.102-.238.238-.238h13.112c.102 0 .17-.034.238-.102a.309.309 0 0 0 .102-.238V5.036a.309.309 0 0 0-.102-.238.309.309 0 0 0-.238-.102H3.929a.342.342 0 0 0-.341.341v.373c0 .102-.034.204-.136.238-.102.034-.204.068-.273 0s-.102-.136-.102-.238v-.409c0-.443.374-.817.852-.817h18.254c.443 0 .817.375.817.817v13.963c0 .477-.374.852-.817.852z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g transform="translate(-66.971 -261.917)">
+                                    <g transform="translate(480.526 -75.04) scale(1.32125)">
+                                        <path
+                                            d="M-304.522 265.499c-.16 0-.325.128-.325.354 0 .206.145.351.325.351.149 0 .215-.1.215-.1v.043c0 .021.019.044.043.044h.108v-.676h-.151v.086a.259.259 0 0 0-.215-.102zm.027.138c.132 0 .201.116.201.215 0 .11-.083.215-.201.215-.099 0-.199-.08-.199-.217 0-.122.086-.213.199-.213z">
+                                        </path>
+                                        <path
+                                            d="M-303.946 266.191a.042.042 0 0 1-.043-.044v-.633h.151v.084c.034-.052.101-.099.204-.099.168 0 .257.134.257.259v.433h-.105a.046.046 0 0 1-.046-.046v-.354c0-.07-.043-.154-.141-.154-.106 0-.169.1-.169.194v.359l-.108.001z">
+                                        </path>
+                                        <path
+                                            d="M-302.936 265.499c-.16 0-.325.128-.325.354 0 .206.145.351.325.351.149 0 .215-.1.215-.1v.043c0 .021.019.044.044.044h.108v-1.015h-.151v.424c-.001 0-.068-.101-.216-.101zm.027.138c.132 0 .201.116.201.215 0 .11-.082.215-.201.215-.099 0-.199-.08-.199-.217 0-.122.085-.213.199-.213z">
+                                        </path>
+                                        <path
+                                            d="M-302.36 266.191a.042.042 0 0 1-.043-.044v-.633h.151v.113a.186.186 0 0 1 .182-.12c.028 0 .054.005.054.005v.156s-.032-.013-.072-.013c-.106 0-.164.1-.164.194v.341l-.108.001z">
+                                        </path>
+                                        <path d="M-301.1 266.191a.042.042 0 0 1-.043-.044v-.633h.151v.676l-.108.001z">
+                                        </path>
+                                        <path
+                                            d="M-300.549 265.499c-.16 0-.325.128-.325.354 0 .206.145.351.325.351.149 0 .215-.1.215-.1v.043c0 .021.019.044.043.044h.108v-1.015h-.151v.424a.258.258 0 0 0-.215-.101zm.027.138c.132 0 .201.116.201.215 0 .11-.083.215-.201.215-.099 0-.199-.08-.199-.217.001-.122.086-.213.199-.213z">
+                                        </path>
+                                        <circle cx="-301.069" cy="265.269" r=".1"></circle>
+                                        <path
+                                            d="M-301.618 265.499a.347.347 0 0 0-.352.352c0 .207.157.352.352.352a.352.352 0 0 0 0-.704zm.001.141c.116 0 .203.094.203.212 0 .12-.092.213-.203.213a.205.205 0 0 1-.202-.211c0-.13.094-.214.202-.214z">
+                                        </path>
+                                    </g>
+                                    <path
+                                        d="M82.331 272.342l.511-.885a.103.103 0 1 0-.178-.104l-.518.897a3.162 3.162 0 0 0-1.318-.281c-.478 0-.922.1-1.318.281l-.518-.897a.102.102 0 0 0-.141-.037.102.102 0 0 0-.037.141l.511.885a3.05 3.05 0 0 0-1.576 2.413h6.16a3.05 3.05 0 0 0-1.578-2.413zm-2.917 1.548a.258.258 0 1 1 0-.516.258.258 0 0 1 0 .516zm2.828 0a.258.258 0 1 1 0-.516.258.258 0 0 1 0 .516z">
+                                    </path>
+                                </g>
+                            </svg>
+
                             <span class="device-name">Android</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="https://www.speedtest.net/apps/ios">
-                            <img class="device-image" src="./img/ios.svg" alt="IOS">
-                            <span class="device-name">IOS</span>
+                        <a class="device-link" href="https://www.speedtest.net/apps/ios">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                class="device-image" title="iOS device" id="ic_ios" viewBox="0 0 24 24" width="24"
+                                height="24">
+                                <path
+                                    d="M7.339 19.816h-5.5c-.463 0-.811-.376-.839-.839V7.137a.84.84 0 0 1 .839-.839h5.5a.84.84 0 0 1 .839.839v11.839a.839.839 0 0 1-.839.84zm-5.5-12.998a.32.32 0 0 0-.318.318v11.839a.32.32 0 0 0 .318.318h5.529a.32.32 0 0 0 .318-.318V7.137a.32.32 0 0 0-.318-.318l-5.529-.001z">
+                                </path>
+                                <circle cx="4.589" cy="17.703" r=".579"></circle>
+                                <circle cx="20.887" cy="12.058" r=".579"></circle>
+                                <path
+                                    d="M22.189 19.816H9.076c-.145 0-.261-.116-.261-.261s.116-.261.261-.261H22.16a.32.32 0 0 0 .318-.318V5.024a.32.32 0 0 0-.318-.318H3.924a.32.32 0 0 0-.318.318V5.4c.029.145-.087.261-.232.289-.145.029-.261-.086-.29-.231v-.434a.84.84 0 0 1 .839-.839h18.266c.464-.001.811.376.811.839v13.982c0 .433-.376.81-.811.81z">
+                                </path>
+                                <path
+                                    d="M10.118 13.65h-.289v-2.374h.289v2.374zm-.144-2.866c-.116 0-.203-.058-.232-.174-.029-.116.058-.203.174-.232h.058c.116 0 .203.058.232.174.029.116-.058.203-.174.232h-.058zm2.113 2.924c-.926 0-1.505-.666-1.505-1.708s.579-1.708 1.505-1.708 1.505.666 1.505 1.708-.579 1.708-1.505 1.708zm3.039 0c-.695 0-1.187-.376-1.216-.955h.318c.029.405.405.666.926.666s.839-.261.839-.637c0-.318-.203-.492-.695-.608l-.405-.116c-.608-.145-.897-.405-.897-.839 0-.521.492-.926 1.129-.926s1.129.376 1.129.897h-.318c-.029-.376-.347-.637-.839-.637s-.782.289-.782.637c0 .289.203.463.695.579l.347.087c.666.174.955.434.955.868.001.608-.462.984-1.186.984zm-3.039-3.126c-.724 0-1.187.55-1.187 1.418s.463 1.418 1.187 1.418 1.187-.55 1.187-1.418-.463-1.418-1.187-1.418z">
+                                </path>
+                            </svg>
+                            <span class="device-name">iOS</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="https://www.speedtest.net/apps/windows">
-                            <img class="device-image" src="./img/windows.svg" alt="Windows">
+                        <a class="device-link" href="https://www.speedtest.net/apps/windows">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                class="device-image" title="Windows device" id="ic_windows" viewBox="0 0 24 24"
+                                width="24" height="24">
+                                <path
+                                    d="M11.602 11.134V9.309l-1.989.234v1.591zm.281 0h2.504V8.981l-2.504.304zm-.281.257H9.613v1.592l1.989.234zm.281 0v1.849l2.504.305v-2.154z">
+                                </path>
+                                <path
+                                    d="M19.817 17.383H4.206a.79.79 0 0 1-.796-.796V5.891a.79.79 0 0 1 .796-.796h15.611a.79.79 0 0 1 .796.796v10.696a.79.79 0 0 1-.796.796zM4.206 5.494a.394.394 0 0 0-.398.398v10.696a.41.41 0 0 0 .398.398h15.611a.41.41 0 0 0 .398-.398V5.891a.41.41 0 0 0-.398-.398l-15.611.001zm18.607 13.41H1.187c-.117 0-.187-.117-.187-.21 0-.094.094-.164.187-.187h21.626a.226.226 0 0 1 .187.233c-.023.094-.094.164-.187.164z">
+                                </path>
+                            </svg>
                             <span class="device-name">Windows</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="https://www.speedtest.net/apps/mac">
-                            <img class="device-image" src="./img/macos.svg" alt="macOS">
+                        <a class="device-link" href="https://www.speedtest.net/apps/mac">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                class="device-image" title="macOS device" id="ic_osx" viewBox="0 0 24 24" width="24"
+                                height="24">
+                                <path
+                                    d="M12.023 8.677c-1.404 0-2.574 1.147-2.574 2.551s1.147 2.574 2.551 2.574 2.574-1.147 2.574-2.551c0-1.404-1.146-2.551-2.551-2.574zm1.241 4.119h-.304l-.936-1.334-.936 1.334h-.304l1.1-1.545-1.1-1.545h.304l.936 1.334.936-1.334h.304l-1.1 1.545 1.1 1.545z">
+                                </path>
+                                <path
+                                    d="M19.817 17.383H4.206a.79.79 0 0 1-.796-.796V5.891a.79.79 0 0 1 .796-.796h15.611a.79.79 0 0 1 .796.796v10.696a.79.79 0 0 1-.796.796zM4.206 5.494a.394.394 0 0 0-.398.398v10.696a.41.41 0 0 0 .398.398h15.611a.41.41 0 0 0 .398-.398V5.891a.41.41 0 0 0-.398-.398l-15.611.001zm18.607 13.41H1.187c-.117 0-.187-.117-.187-.21 0-.094.094-.164.187-.187h21.626a.226.226 0 0 1 .187.233c-.023.094-.094.164-.187.164z">
+                                </path>
+                            </svg>
                             <span class="device-name">Mac</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="https://www.speedtest.net/apps/chrome">
-                            <img class="device-image" src="./img/chrome-os.svg" alt="Chrome OS">
+                        <a class="device-link" href="https://www.speedtest.net/apps/chrome">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                class="device-image" title="Chrome OS device" id="ic_chrome" viewBox="0 0 24 24"
+                                width="24" height="24">
+                                <path
+                                    d="M22.153 20.898H1.815A.808.808 0 0 1 1 20.083V3.917c0-.456.359-.815.815-.815h20.37c.456 0 .815.359.815.815V20.05a.842.842 0 0 1-.847.848zM1.815 3.656a.28.28 0 0 0-.261.261V20.05c0 .13.098.261.261.261h20.37a.28.28 0 0 0 .261-.261V3.917a.258.258 0 0 0-.261-.261H1.815z">
+                                </path>
+                                <circle cx="3.151" cy="5.286" r=".456"></circle>
+                                <circle cx="4.65" cy="5.286" r=".456"></circle>
+                                <circle cx="6.15" cy="5.286" r=".456"></circle>
+                                <path
+                                    d="M11.984 10.827c.684 0 1.271.554 1.271 1.271 0 .684-.554 1.271-1.271 1.271a1.272 1.272 0 0 1 0-2.542z">
+                                </path>
+                                <path
+                                    d="M11.984 13.89c-.652 0-1.271-.359-1.564-.913L8.855 10.24c-1.01 1.727-.424 3.976 1.336 4.954.359.228.782.359 1.206.424l1.043-1.825a1.281 1.281 0 0 1-.456.097zm0-3.617h3.161c-1.01-1.727-3.227-2.347-4.954-1.336-.358.227-.717.488-.978.814l1.043 1.825a1.717 1.717 0 0 1 1.728-1.303zm3.422.554h-2.119c.326.326.521.782.489 1.271 0 .326-.098.619-.228.913l-1.564 2.705c2.021 0 3.618-1.63 3.618-3.65a3.976 3.976 0 0 0-.196-1.239z">
+                                </path>
+                            </svg>
                             <span class="device-name">Chrome</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="https://www.speedtest.net/apps/appletv">
-                            <img class="device-image" src="./img/apple-tv.svg" alt="Apple TV device">
+                        <a class="device-link" href="https://www.speedtest.net/apps/appletv">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                class="device-image" title="Apple TV device" id="ic_appletv" viewBox="0 0 24 24"
+                                width="24" height="24">
+                                <path
+                                    d="M12.899 10.51v-.364h-.501v-.569l-.501.114v.455h-.296v.364h.296v1.024a.778.778 0 0 0 .159.546.517.517 0 0 0 .432.159c.114 0 .25-.023.364-.046v-.387c-.068.023-.137.023-.205.023-.182 0-.25-.137-.25-.364v-.955h.502zm1.569-.364l-.319 1.092c-.046.182-.091.341-.137.501-.046-.159-.068-.319-.137-.501l-.319-1.092h-.546l.728 2.07h.501l.774-2.07h-.545zm-3.594.796c0-.228.114-.432.296-.523a.67.67 0 0 0-.523-.273c-.228-.023-.432.137-.546.137s-.296-.137-.478-.114a.645.645 0 0 0-.569.341c-.25.432-.068 1.069.182 1.411.114.182.25.364.432.364s.25-.114.455-.114c.205 0 .273.114.455.114s.319-.182.432-.341c.091-.114.159-.273.205-.41a.731.731 0 0 1-.341-.592zm-.614-1.251a.6.6 0 0 0-.16.432.487.487 0 0 0 .41-.205.576.576 0 0 0 .137-.455.758.758 0 0 0-.387.228z">
+                                </path>
+                                <path
+                                    d="M22.34 4.663H1.637A.636.636 0 0 0 1 5.3v11.148c0 .341.273.637.637.637h10.192v1.888H8.758c-.091 0-.182.068-.182.182s.068.182.182.182h6.484c.091 0 .182-.068.182-.182s-.068-.182-.182-.182h-3.071v-1.888h10.192a.636.636 0 0 0 .637-.637V5.3c-.046-.364-.319-.637-.66-.637zm.296 11.762a.277.277 0 0 1-.273.273H1.66a.277.277 0 0 1-.273-.273V5.277c0-.159.137-.273.273-.273h20.703c.159 0 .273.137.273.273v11.148z">
+                                </path>
+                            </svg>
                             <span class="device-name">AppleTV</span>
                         </a>
                     </li>
                     <li class="device">
-                        <a href="https://www.speedtest.net/apps/cli">
-                            <img class="device-image" src="./img/cli.svg" alt="CLI - Command line">
+                        <a class="device-link" href="https://www.speedtest.net/apps/cli">
+                            <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"
+                                class="device-image" title="Command line device" id="ic_cli" viewBox="0 0 24 24"
+                                width="24" height="24">
+                                <g transform="translate(-16 -12)" id="Symbols">
+                                    <g id="icon-cli-copy" transform="translate(16 12)">
+                                        <path id="Shape"
+                                            d="M22.179 20.898H1.821A.821.821 0 0 1 1 20.073V3.927a.82.82 0 0 1 .821-.825h20.357a.821.821 0 0 1 .822.825v16.146a.822.822 0 0 1-.821.825zM1.821 3.663a.26.26 0 0 0-.26.264v16.146a.26.26 0 0 0 .261.264h20.357a.26.26 0 0 0 .261-.264V3.927a.26.26 0 0 0-.261-.264H1.821z">
+                                        </path>
+                                        <circle id="Oval" cx="3.161" cy="5.279" r=".453"></circle>
+                                        <circle cx="4.67" cy="5.279" r=".453"></circle>
+                                        <circle cx="6.179" cy="5.279" r=".453"></circle>
+                                        <path id="Path"
+                                            d="M8.369 14.836a.42.42 0 0 1-.3-.127.423.423 0 0 1 0-.606l1.975-1.982-1.975-1.982a.43.43 0 0 1 .607-.606l2.281 2.281a.43.43 0 0 1 0 .606l-2.281 2.281a.431.431 0 0 1-.307.135z">
+                                        </path>
+                                        <path d="M15.644 13.923h-3.227a.43.43 0 0 0 0 .858h3.227a.43.43 0 0 0 0-.858z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
                             <span class="device-name">CLI</span>
                         </a>
                     </li>

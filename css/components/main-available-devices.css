@@ -1,0 +1,61 @@
+.main-available-devices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-blue);
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0.929rem 0;
+}
+
+.description {
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.device-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "device-link device-link device-link device-link device-link device-link device-link";
+}
+
+.device {
+    width: 6.429rem;
+}
+
+.device-link {
+    grid-area: device-link;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.device-image {
+    width: 5.063rem;
+    height: auto;
+    fill: var(--gray);
+    margin-bottom: 18.804px;
+}
+
+.device-name {
+    font-size: 0.938rem;
+    line-height: 1.5rem;
+    color: var(--gray);
+}
+
+.device-link:hover .device-name {
+    color: var(--light-blue);
+}
+
+.device-link:hover .device-image {
+    fill: var(--light-blue);
+}
