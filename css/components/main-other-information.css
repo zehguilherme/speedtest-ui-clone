@@ -1,0 +1,61 @@
+.main-other-information {
+    padding: 2.813rem 0;
+    background-color: var(--primary-blue);
+}
+
+.information-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    width: 19.688rem;
+    height: 17.691rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.393rem 1.25rem 0 1.25rem;
+}
+
+.information-icon {
+    width: 4rem;
+    margin-top: 1rem;
+}
+
+.information-title {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    margin: 0.938rem 0;
+    text-align: center;
+}
+
+.information-detail {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.188rem;
+    padding: 0 1.358rem;
+    margin: 0 0 1.219rem 0;
+}
+
+.information-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.303rem;
+    font-weight: 500;
+    font-size: 0.938rem;
+    color: var(--light-blue);
+    border-width: 2px;
+    border-color: rgba(145, 147, 168, 0.5);
+    border-style: solid;
+    padding: 0.464rem 0.929rem;
+    border-radius: 10rem;
+}
+
+.information-button:hover {
+    color: var(--white);
+    border-color: var(--white);
+}
