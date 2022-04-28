@@ -1,0 +1,10 @@
+@media only screen and (max-width: 768px) {
+    .footer-main-links {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "speedtest apps"
+            "account ookla"
+            "enterprise languages"
+            "ookla-brands ziff-davis";
+    }
+}

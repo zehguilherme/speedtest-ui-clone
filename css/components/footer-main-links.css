@@ -1,0 +1,111 @@
+.footer-main-links {
+    background-color: var(--black);
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "speedtest apps account ookla"
+        ". . enterprise languages"
+        ". . ookla-brands ziff-davis";
+}
+
+.links-container {
+    padding: 0 1.25rem;
+}
+
+.footer-title {
+    color: #d7d8df;
+    font-weight: 500;
+    font-size: 0.938rem;
+    line-height: 1.5rem;
+    display: inline-block;
+    margin-bottom: 0.929rem;
+}
+
+.footer-title .ookla-logo {
+    fill: #d7d8df;
+}
+
+.footer-title:is(a):hover {
+    color: var(--white);
+}
+
+.footer-title:hover .ookla-logo {
+    fill: var(--white);
+}
+
+.footer-links-list {
+    margin-bottom: 1.75rem;
+}
+
+.footer-link {
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    display: inline-block;
+    margin-bottom: 0.163rem;
+}
+
+.footer-link.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-link.social-media .icon {
+    margin-right: 0.292rem;
+    height: 1.313rem;
+    width: auto;
+    fill: var(--gray);
+}
+
+.footer-link:hover {
+    color: var(--white);
+}
+
+.footer-link.social-media:hover .icon {
+    fill: var(--white);
+}
+
+.speedtest-container {
+    grid-area: speedtest;
+}
+
+.apps-container {
+    grid-area: apps;
+}
+
+.account-container {
+    grid-area: account;
+}
+
+.enterprise-container {
+    grid-area: enterprise;
+}
+
+.ookla-brands-container {
+    grid-area: ookla-brands;
+}
+
+.ookla-container {
+    grid-area: ookla;
+}
+
+.languages-container {
+    grid-area: languages;
+}
+
+.languages-container .footer-item,
+.ziff-davis-container .footer-item {
+    display: inline-block;
+    margin: 0 0.875rem 0.175rem 0rem;
+}
+
+.languages-container .footer-link {
+    margin: 0;
+}
+
+.ziff-davis-container {
+    grid-area: ziff-davis;
+}
