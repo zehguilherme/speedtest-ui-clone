@@ -1,3 +1,4 @@
+import { getCurrentYear } from './footer.js'
 import { openHamburgerMenu } from './navbar.js'
 import { changeConnectionType, executeConnectionTest } from './networkTest.js'
 
@@ -6,5 +7,6 @@ import { changeConnectionType, executeConnectionTest } from './networkTest.js'
         openHamburgerMenu()
         changeConnectionType()
         executeConnectionTest()
+        getCurrentYear()
     }
 })()
