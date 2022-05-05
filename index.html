@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./css/components/main-available-devices.css">
     <link rel="stylesheet" href="./css/components/main-other-information.css">
     <link rel="stylesheet" href="./css/components/footer-main-links.css">
+    <link rel="stylesheet" href="./css/components/footer-another-information.css">
 
     <link rel="stylesheet" href="./css/components/mobile/header-container.css">
     <link rel="stylesheet" href="./css/components/mobile/header-logo-container.css">
@@ -46,6 +47,7 @@
     <link rel="stylesheet" href="./css/components/mobile/main-available-devices.css">
     <link rel="stylesheet" href="./css/components/mobile/main-other-information.css">
     <link rel="stylesheet" href="./css/components/mobile/footer-main-links.css">
+    <link rel="stylesheet" href="./css/components/mobile/footer-another-information.css">
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <title>Speedtest by Ookla - The Global Broadband Speed Test</title>
@@ -1187,42 +1189,46 @@
                 </div>
             </main>
 
-            <footer>
-                <small>Ookla®, Speedtest®, and Speedtest Intelligence® are among some of the federally registered
-                    trademarks
-                    of Ookla, LLC and may only be used with explicit written permission. © 2006-2021 Ookla, LLC. All
-                    Rights Reserved</small>
+            <footer class="footer-another-information">
+                <div class="another-information-container">
+                    <small class="rights">Ookla®, Speedtest®, and Speedtest Intelligence® are among some of the
+                        federally
+                        registered
+                        trademarks
+                        of Ookla, LLC and may only be used with explicit written permission. © 2006-<span
+                            class="current-year"></span> Ookla, LLC. All
+                        Rights Reserved</small>
 
-                <ul>
-                    <li>
-                        <a href="#">Accessibility</a>
-                    </li>
-                    <li>
-                        <a href="#">Network Status</a>
-                    </li>
-                    <li>
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#">Terms of Use</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/adchoices-icon.png" alt="AdChoices icon">
-                            AdChoices
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="another-information-links-list">
+                        <li class="another-information-list-item">
+                            <a class="footer-link"
+                                href="https://www.speedtest.net/about/accessibility">Accessibility</a>
+                        </li>
+                        <li class="another-information-list-item">
+                            <a class="footer-link" href="https://status.ookla.com/">Network Status</a>
+                        </li>
+                        <li class="another-information-list-item">
+                            <a class="footer-link" href="https://www.speedtest.net/about/privacy">Privacy Policy</a>
+                        </li>
+                        <li class="another-information-list-item">
+                            <a class="footer-link" href="https://www.speedtest.net/about/terms">Terms of Use</a>
+                        </li>
+                        <li class="another-information-list-item">
+                            <a class="footer-link" href="#">AdChoices</a>
+                        </li>
+                    </ul>
 
-                <p>
-                    <a href="#">Do Not Sell My Personal Information</a>
-                </p>
+                    <a class="footer-link sell-information" href="https://www.speedtest.net/about/ccpa">Do Not Sell My
+                        Personal
+                        Information</a>
+                </div>
             </footer>
         </div>
     </footer>
 
     <script src="./js/main.js" type="module"></script>
     <script src="./js/graphics.js"></script>
+    <script src="./js/footer.js"></script>
 </body>
 
 </html>
