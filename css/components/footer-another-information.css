@@ -1,0 +1,42 @@
+.footer-another-information {
+    background-color: var(--black);
+}
+
+.another-information-container {
+    padding: 0 1.25rem 0.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.rights {
+    margin-bottom: 0.729rem;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.188rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.another-information-links-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.175rem;
+}
+
+.another-information-links-list .another-information-list-item {
+    padding: 0 0.656rem;
+    text-align: center;
+}
+
+.another-information-links-list .footer-link {
+    margin: 0;
+}
+
+.sell-information {
+    margin-bottom: 0.175rem;
+}

@@ -1,0 +1,10 @@
+@media only screen and (max-width: 768px) {
+    .another-information-links-list {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .another-information-links-list .another-information-list-item {
+        margin-bottom: 1rem;
+    }
+}
