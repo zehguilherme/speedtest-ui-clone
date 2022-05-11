@@ -1,4 +1,8 @@
 @media only screen and (max-width: 768px) {
+    .description-container {
+        padding: 0 1.25rem;
+    }
+
     .device-list {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
