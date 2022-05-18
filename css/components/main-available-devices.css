@@ -49,7 +49,6 @@
 .device-name {
     font-size: 0.938rem;
     line-height: 1.5rem;
-    color: var(--gray);
 }
 
 .device-link:hover .device-name {
