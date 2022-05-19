@@ -1,5 +1,4 @@
 .footer-main-links {
-    background-color: var(--black);
     padding-top: 3rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
