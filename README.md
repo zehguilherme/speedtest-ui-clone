@@ -37,6 +37,14 @@ Clone the repository
     git clone https://github.com/zehguilherme/speedtest-ui-clone
 ```
 
+## 👀 Final result
+
+### Web
+![Speedtest_Desktop](https://user-images.githubusercontent.com/36301054/169569477-89d24c22-a787-4751-851c-537f32439636.gif)
+
+### Mobile
+https://user-images.githubusercontent.com/36301054/169572310-5094b650-b09d-43b1-a1a1-5e38ed6ce27e.mp4
+
 ## 🤔 How to contribute
 
 1. Fork the project;
