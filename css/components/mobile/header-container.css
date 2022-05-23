@@ -16,6 +16,6 @@
         grid-template-areas:
             ". . mobile-controls"
             ". header-navigation-menu .";
-        min-height: calc(3.213rem + 1438.88px);
+        height: 100%;
     }
 }

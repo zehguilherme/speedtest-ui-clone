@@ -4,7 +4,7 @@
     background-color: var(--secondary-blue);
     border-radius: 3px;
     margin-top: 0.5rem;
-    min-width: 12rem;
+    width: 192px;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
@@ -30,6 +30,10 @@
 
 .header-navigation-list-item:hover .header-navigation-submenu {
     display: block;
+}
+
+.header-navigation-submenu-analysis {
+    width: 15.455rem;
 }
 
 .header-navigation-submenu-enterprise {
