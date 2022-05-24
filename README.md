@@ -31,11 +31,13 @@
 
 ## 🚀 Getting started
 
-Clone the repository
+1. Clone the repository
 
 ```code
     git clone https://github.com/zehguilherme/speedtest-ui-clone
 ```
+
+2. Open `index.html` file
 
 ## 👀 Final result
 
