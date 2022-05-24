@@ -1,9 +1,10 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 845px) {
     .main-network-test {
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
             "main"
             "footer";
+        padding: 2.188rem 0 4rem 0;
     }
 }
