@@ -23,7 +23,7 @@
 .device-list {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "device-link device-link device-link device-link device-link device-link device-link";
+    grid-template-areas: "android ios windows mac chrome appletv cli";
 }
 
 .device {

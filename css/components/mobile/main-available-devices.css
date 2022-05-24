@@ -6,11 +6,10 @@
     .device-list {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
-            "device-link device-link"
-            "device-link device-link"
-            "device-link device-link"
-            "device-link device-link"
-            "device-link device-link";
+            "android ios"
+            "windows mac"
+            "chrome appletv"
+            "cli .";
     }
 
     .device-image {
