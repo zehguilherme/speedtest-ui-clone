@@ -27,7 +27,7 @@
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [APEXCHARTS.JS](https://apexcharts.com/) - Open-source charts
+- [APEXCHARTS.JS](https://apexcharts.com/) - Open source charts
 
 ## 🚀 Getting started
 
