@@ -32,12 +32,16 @@
     cursor: pointer;
 }
 
-.connections-container .connection-icon-container:hover {
-    border-color: var(--white);
+@media (hover: hover) {
+    .connections-container .connection-icon-container:hover {
+        border-color: var(--white);
+    }
 }
 
-.connection-icon-container:hover .connection-icon {
-    fill: var(--white);
+@media (hover: hover) {
+    .connection-icon-container:hover .connection-icon {
+        fill: var(--white);
+    }
 }
 
 .connection-icon-container .connection-icon:not(.active) {

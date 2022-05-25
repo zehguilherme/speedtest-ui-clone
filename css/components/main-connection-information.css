@@ -69,8 +69,10 @@
     line-height: 1.688rem;
 }
 
-.server-name-city .server-name:hover {
-    color: var(--pool-blue);
+@media (hover: hover) {
+    .server-name-city .server-name:hover {
+        color: var(--pool-blue);
+    }
 }
 
 .server-name-city .server-city {
@@ -85,6 +87,8 @@
     color: var(--light-blue);
 }
 
-.server-name-city .server-link:hover {
-    color: var(--pool-blue);
+@media (hover: hover) {
+    .server-name-city .server-link:hover {
+        color: var(--pool-blue);
+    }
 }

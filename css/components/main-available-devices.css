@@ -51,10 +51,14 @@
     line-height: 1.5rem;
 }
 
-.device-link:hover .device-name {
-    color: var(--light-blue);
+@media (hover: hover) {
+    .device-link:hover .device-name {
+        color: var(--light-blue);
+    }
 }
 
-.device-link:hover .device-image {
-    fill: var(--light-blue);
+@media (hover: hover) {
+    .device-link:hover .device-image {
+        fill: var(--light-blue);
+    }
 }

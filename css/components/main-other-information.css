@@ -55,7 +55,9 @@
     border-radius: 10rem;
 }
 
-.information-button:hover {
-    color: var(--white);
-    border-color: var(--white);
+@media (hover: hover) {
+    .information-button:hover {
+        color: var(--white);
+        border-color: var(--white);
+    }
 }
