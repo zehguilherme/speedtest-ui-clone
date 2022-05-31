@@ -48,17 +48,12 @@
     margin-bottom: 0.163rem;
 }
 
-.footer-link.social-media {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
 .footer-link.social-media .icon {
     margin-right: 0.292rem;
     height: 1.313rem;
     width: auto;
     fill: var(--gray);
+    vertical-align: middle;
 }
 
 .footer-link:hover {
