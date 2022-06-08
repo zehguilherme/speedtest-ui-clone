@@ -15,6 +15,12 @@ export function changeConnectionType () {
         })
     }
 
+    connectionIconContainer.addEventListener('keydown', (event) => {
+        if (event.keyCode === 13) {
+            connectionIconContainer.click()
+        }
+    })
+
     connectionIconContainer.addEventListener('click', () => {
         changeConnectionIconType()
 
