@@ -8,44 +8,12 @@
         ". . ookla-brands ziff-davis";
 }
 
-.links-container {
-    padding: 0 1.25rem;
-}
-
-.footer-title {
-    color: #d7d8df;
-    font-weight: 500;
-    font-size: 0.938rem;
-    line-height: 1.5rem;
-    display: inline-block;
-    margin-bottom: 0.929rem;
-}
-
 .footer-title .ookla-logo {
     fill: #d7d8df;
 }
 
-@media (hover: hover) {
-    .footer-title:is(a):hover {
-        color: var(--white);
-    }
-}
-
 .footer-title:hover .ookla-logo {
     fill: var(--white);
-}
-
-.footer-links-list {
-    margin-bottom: 1.75rem;
-}
-
-.footer-link {
-    color: var(--gray);
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    display: inline-block;
-    margin-bottom: 0.163rem;
 }
 
 .footer-link.social-media .icon {
@@ -54,10 +22,6 @@
     width: auto;
     fill: var(--gray);
     vertical-align: middle;
-}
-
-.footer-link:hover {
-    color: var(--white);
 }
 
 .footer-link.social-media:hover .icon {
