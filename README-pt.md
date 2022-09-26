@@ -37,7 +37,7 @@
     git clone https://github.com/zehguilherme/speedtest-ui-clone
 ```
 
-2. Abra o arquivo `index.html`
+2. Abra o arquivo `index.html` no navegador de sua preferência, clicando 2 vezes sobre ele.
 
 ## 👀 Resultado final
 
