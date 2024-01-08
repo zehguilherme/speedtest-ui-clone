@@ -3,18 +3,10 @@
 </h1>
 
 <div align="center">
-  <img src="./img/logo.svg" alt="Speedtest logo">
+  <img src="https://i.imgur.com/lY9wMPr.png" alt="Speedtest home page">
 </div>
 
-<br/>
-
-<div align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/zehguilherme/speedtest-ui-clone">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/zehguilherme/speedtest-ui-clone">
-  <a href="https://www.codacy.com/gh/zehguilherme/speedtest-ui-clone/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zehguilherme/speedtest-ui-clone&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/83a30fcc180a4f7a9115d08bcc6b13ee"/></a>
-</div>
-
-<br>
+<br />
 
 <div align="center">
   <a href="README.md">English</a>
@@ -38,14 +30,6 @@
 ```
 
 2. Open the `index.html` file in your preferred browser by double clicking on it.
-
-## 👀 Final result
-
-### Web
-![Speedtest_Desktop](https://user-images.githubusercontent.com/36301054/169569477-89d24c22-a787-4751-851c-537f32439636.gif)
-
-### Mobile
-https://user-images.githubusercontent.com/36301054/169572310-5094b650-b09d-43b1-a1a1-5e38ed6ce27e.mp4
 
 ## 🤔 How to contribute
 
