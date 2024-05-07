@@ -1,5 +1,5 @@
 <h1 align="center">
-  Clone da Interface do Speedtest
+  Clone de Interface do Speedtest
 </h1>
 
 <div align="center">
@@ -13,6 +13,10 @@
   ·
   <a href="README-pt.md">Português</a>
 </div>
+
+## 💬 Descrição
+
+Um clone da interface da página inicial do site Speedtest.
 
 ## ⚙️ Tecnologias
 
