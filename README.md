@@ -1,53 +1,53 @@
 <h1 align="center">
-  Speedtest UI Clone
+  Clone de Interface do Speedtest
 </h1>
 
 <div align="center">
-  <img src="https://i.imgur.com/lY9wMPr.png" alt="Speedtest home page">
+  <img src="https://i.imgur.com/lY9wMPr.png" alt="Página home do site Speedtest">
 </div>
 
-<br />
+<br>
 
 <div align="center">
-  <a href="README.md">English</a>
+  <a href="README-en.md">English</a>
   ·
-  <a href="README-pt.md">Português</a>
+  <a href="README.md">Português</a>
 </div>
 
-## 💬 Description
+## 💬 Descrição
 
-A clone of Speedtest website home page interface.
+Um clone da interface da página inicial do site Speedtest.
 
-## ⚙️ Technologies
+## ⚙️ Tecnologias
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [APEXCHARTS.JS](https://apexcharts.com/) - Open source charts
+- [APEXCHARTS.JS](https://apexcharts.com/) - Gráficos open source
 
-## 🚀 Getting started
+## 🚀 Começando
 
-1. Clone the repository
+1. Clone o repositório
 
 ```code
     git clone https://github.com/zehguilherme/speedtest-ui-clone
 ```
 
-2. Open the `index.html` file in your preferred browser by double clicking on it.
+2. Abra o arquivo `index.html` no navegador de sua preferência, clicando 2 vezes sobre ele.
 
-## 🤔 How to contribute
+## 🤔 Como contribuir
 
-1. Fork the project;
-2. Create your feature branch: `git checkout -b my-new-feature`;
-3. Commit your changes: `git commit -m 'feat: Add some feature'`;
-4. Push to the branch: `git push origin my-new-feature`;
-5. Create a new Pull Request;
-6. After the merge of your pull request is done, you can delete your branch.
+1. Faça um fork desse repositório;
+2. Crie uma branch com a sua feature: `git checkout -b minha-feature`;
+3. Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+4. Faça push para a sua branch: `git push origin minha-feature`;
+5. Crie um pull request;
+6. Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
-## 📝 License
+## 📝 Licença
 
-This project is under the MIT license. See the  [license](LICENSE) for more information.
+Este projeto está sob a licença MIT. Veja a [licença](LICENSE) para mais informações.
 
 ---
 
-Made with 💟 by José Guilherme Paro Monteiro Tomaine 👋 [Talk to me!](https://www.linkedin.com/in/jos%C3%A9-guilherme-paro-monteiro-tomaine/)
+Feito com 💟 por José Guilherme Paro Monteiro Tomaine 👋 [Fale comigo!](https://www.linkedin.com/in/jos%C3%A9-guilherme-paro-monteiro-tomaine/)
