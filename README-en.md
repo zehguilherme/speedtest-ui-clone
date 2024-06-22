@@ -20,10 +20,10 @@ A clone of Speedtest website home page interface.
 
 ## ⚙️ Technologies
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [APEXCHARTS.JS](https://apexcharts.com/) - Open source charts
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Markup language used in building web pages
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Web page styling language
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming language
+- [APEXCHARTS.JS](https://apexcharts.com/) - A graphics library based on the JavaScript language
 
 ## 🚀 Getting started
 
@@ -43,10 +43,6 @@ A clone of Speedtest website home page interface.
 4. Push to the branch: `git push origin my-new-feature`;
 5. Create a new Pull Request;
 6. After the merge of your pull request is done, you can delete your branch.
-
-## 📝 License
-
-This project is under the MIT license. See the  [license](LICENSE) for more information.
 
 ---
 
