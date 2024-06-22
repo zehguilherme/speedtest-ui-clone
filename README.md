@@ -20,10 +20,10 @@ Um clone da interface da página inicial do site Speedtest.
 
 ## ⚙️ Tecnologias
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [APEXCHARTS.JS](https://apexcharts.com/) - Gráficos open source
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Linguagem de marcação usada na construção de páginas web
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Linguagem de estilização de páginas web
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Linguagem de programação
+- [APEXCHARTS.JS](https://apexcharts.com/) - Uma biblioteca de gráficos baseada na linguagem JavaScript
 
 ## 🚀 Começando
 
@@ -43,10 +43,6 @@ Um clone da interface da página inicial do site Speedtest.
 4. Faça push para a sua branch: `git push origin minha-feature`;
 5. Crie um pull request;
 6. Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja a [licença](LICENSE) para mais informações.
 
 ---
 
